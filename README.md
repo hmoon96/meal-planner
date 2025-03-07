@@ -31,10 +31,14 @@ Meal library
 
 ## Database Structure and relationships
 Models
+![image](https://github.com/user-attachments/assets/144720bf-992d-4460-be49-d8541c1e8a59)
+
 
 
 ## User Flow Diagram
 Paste diagram and explain
+![image](https://github.com/user-attachments/assets/ce7145b7-25b5-4f1a-aba3-96881aae28a5)
+
 
 ## User Stories
 Examples
