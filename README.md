@@ -23,11 +23,17 @@ My meal planning app aims to provide a straightforward and intuitive solution, a
 **Draft** My primary target audience includes busy professionals, families, and anyone looking for help planning their weekly meals. This can be anyone that would benefot from saving time, money or both.
 
 ## Minimum Viable Product
-The MVP will inclu
+The MVP will include a meal planner, which will be in the form of a table. There will be the days of the week across the top, and Breakfast, Lunch and Dinner down the side. Users will then be able to type the meals they are going to eat into each of these boxes. As users will be able to log in, they will have the opportunity to save, update and delete aspects of their planner, so it is always up to date. 
 
 ## Other Features - Prioritisation
-To do list 
-Meal library
+There are other features that I would like to include to enhance the user experience and make the app even more useful. I will list these in order of priority:
+1) Ability to share and download the meal plan, to share with family members
+2) Enhance the log in functionality, so multiple users can log into the same account
+3) Meal library with recipes and ingredients
+4) To do list which auto fills from the recipe, based on ingredients
+5) Include a cost calculator which predicts the average cost of meals, to help with budgeting
+6) Include calorie/nutitional information
+
 
 ## Database Structure and relationships
 Models
