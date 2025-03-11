@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 
 class MealPlan(models.Model):
-    user = models.ForeignKey('User', related_name='meal_plans', on_delete=models.CASCADE)
+    user = models.ForeignKey('auth.User', related_name='meal_plans', on_delete=models.CASCADE)
     week = models.DateField()
     monday_food = models.TextField()
     tuesday_food = models.TextField()
@@ -14,9 +14,3 @@ class MealPlan(models.Model):
     friday_food = models.TextField()
     saturday_food = models.TextField()
     sunday_food = models.TextField()
-
-
-
-
-
-
