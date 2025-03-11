@@ -35,7 +35,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "hmoon96-meal-planner-9c8cfb97430e.herokuapp.com",
+    '.herokuapp.com',
+    '127.0.0.1',
+    'localhost',
 ]
 
 CSRF_TRUSTED_ORIGINS = ['https://*.herokuapp.com']
