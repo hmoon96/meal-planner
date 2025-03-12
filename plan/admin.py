@@ -4,5 +4,3 @@ from .models import MealPlan
 # Register your models here.
 
 admin.site.register(MealPlan)
-
-

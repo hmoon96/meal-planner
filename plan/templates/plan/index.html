@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plans</title>
+</head>
+<body>
+    <h1>Meal Plans</h1>
+    <ul>
+        {% for meal_plan in meal_plans %}
+            <li>
+                <strong>Week of {{ meal_plan.week }}:</strong><br>
+                Monday: {{ meal_plan.monday_food }}<br>
+                Tuesday: {{ meal_plan.tuesday_food }}<br>
+                Wednesday: {{ meal_plan.wednesday_food }}<br>
+                Thursday: {{ meal_plan.thursday_food }}<br>
+                Friday: {{ meal_plan.friday_food }}<br>
+                Saturday: {{ meal_plan.saturday_food }}<br>
+                Sunday: {{ meal_plan.sunday_food }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,9 +1,15 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import ListView
+from .models import MealPlan
 
-# Create your views here.
-class HomePage(TemplateView):
-    """
-    Displays home page"
-    """
-    template_name = 'index.html'
+
+def meal_list(request):
+    meal_plans = MealPlan.objects.all()
+    return render(request, 'plan/index.html', {'meal_plans': meal_plans})
+
+
+
+class MealList(ListView):
+    model = MealPlan
+    template_name = 'plan/index.html'
+    context_object_name = 'meal_plans'
