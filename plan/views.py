@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.views.generic import ListView, UpdateView, TemplateView
+from django.views.generic import ListView, UpdateView, TemplateView, CreateView
 from .models import MealPlan
 from .forms import MealPlanForm
 
@@ -17,7 +17,7 @@ class MealDetail(UpdateView):
     context_object_name = 'meal_plan'
 
 
-class MealCreate(UpdateView):
+class MealCreate(CreateView):
     model = MealPlan
     template_name = 'plan/create.html'
     fields = '__all__'
