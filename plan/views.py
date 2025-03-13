@@ -11,13 +11,6 @@ class MealList(ListView):
     context_object_name = 'meal_plans'
 
 
-class MealDetail(UpdateView):
-    model = MealPlan
-    template_name = 'plan/detail.html'
-    fields = '__all__'
-    context_object_name = 'meal_plan'
-
-
 class MealCreate(CreateView):
     model = MealPlan
     template_name = 'plan/create.html'
