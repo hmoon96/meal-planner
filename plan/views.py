@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
-from django.views.generic import ListView, UpdateView, TemplateView, CreateView
+from django.views.generic import ListView, UpdateView, TemplateView
+from django.views.generic import CreateView, DeleteView
 from .models import MealPlan
 from .forms import MealPlanForm
 
@@ -31,7 +32,7 @@ class MealUpdate(UpdateView):
     context_object_name = 'meal_plan'
 
 
-class MealDelete(UpdateView):
+class MealDelete(DeleteView):
     model = MealPlan
     template_name = 'plan/delete.html'
     fields = '__all__'
