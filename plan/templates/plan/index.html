@@ -19,12 +19,12 @@
                 Saturday: {{ meal_plan.saturday_food }}<br>
                 Sunday: {{ meal_plan.sunday_food }}
             </li>
-
+            <a href="{% url 'meal_update' meal_plan.id %}">Update Meal Plan</a>
+            <a href="{% url 'meal_delete' meal_plan.id %}">Delete Meal Plan</a>
         {% endfor %}
     </ul>
     <a href="{% url 'meal_create' %}">Create New Meal Plan</a>
     <a href="{% url 'meal_list' %}">View Your Meal Plan</a>
-    <a href="{% url 'meal_delete' %}">Delete Meal Plan</a>
-    <a href="{% url 'meal_update' %}">Update Meal Plan</a>
+
 </body>
 </html>

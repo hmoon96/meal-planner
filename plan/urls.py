@@ -1,11 +1,11 @@
 from django.urls import path
-from .views import IndexView, MealList, MealCreate, MealUpdate, MealDelete
+from . import views
 
 
 urlpatterns = [
-    path('', IndexView.as_view(), name='index'),
-    path('meal_list/', MealList.as_view(), name='meal_list'),
-    path('meal/create/', MealCreate.as_view(), name='meal_create'),
-    path('meal/update/', MealUpdate.as_view(), name='meal_update'),
-    path('meal/delete/', MealDelete.as_view(), name='meal_delete'),
+    path('', views.MealList, name='index'),
+    path('meal_list/', views.MealList, name='meal_list'),
+    path('meal/create/', views.CreateMeal, name='meal_create'),
+    path('meal/update/<int:id>', views.UpdateMeal, name='meal_update'),
+    path('meal/delete/<int:id>', views.DeleteMeal, name='meal_delete'),
 ]

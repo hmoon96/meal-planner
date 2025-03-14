@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Delete Meal Plan</h1>
+    <h1>Are you sure you want to delete this Meal Plan?</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Yes, Delete</button>
+    </form>
+    <a href="{% url 'index' %}">No, take me home</a>
 </body>
 </html>

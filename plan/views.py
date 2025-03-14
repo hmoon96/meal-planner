@@ -1,48 +1,47 @@
-from django.shortcuts import render, redirect
-from django.views.generic import ListView, UpdateView, TemplateView
-from django.views.generic import CreateView, DeleteView
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import MealPlan
 from .forms import MealPlanForm
 
 
-class MealList(ListView):
-    model = MealPlan
-    template_name = 'plan/index.html'
-    context_object_name = 'meal_plans'
+def MealList(request):
+    meal_plans = MealPlan.objects.all()
+    context = { 
+        "meal_plans": meal_plans, 
+    }
+    return render(request, 'plan/index.html', context)
 
 
-class MealCreate(CreateView):
-    model = MealPlan
-    template_name = 'plan/create.html'
-    fields = '__all__'
-    context_object_name = 'meal_plan'
+def CreateMeal(request):
+    if request.method == "POST":
+        plan = MealPlanForm(request.POST)
+        plan.save()
+        return redirect("index")
+    else:
+        form = MealPlanForm()
+        context = {
+            "form": form,
+        }
+        return render(request, 'plan/create.html', context)
 
 
-class MealUpdate(UpdateView):
-    model = MealPlan
-    template_name = 'plan/update.html'
-    fields = '__all__'
-    context_object_name = 'meal_plan'
+def UpdateMeal(request, id):
+    meal_to_update = get_object_or_404(MealPlan, id=id)
+    if request.method == "POST":
+        plan = MealPlanForm(request.POST, instance=meal_to_update)
+        plan.save()
+        return redirect("index")
+    else:
+        form = MealPlanForm(instance=meal_to_update)
+        context = {
+            "form": form,
+        }
+        return render(request, 'plan/update.html', context)
 
 
-class MealDelete(DeleteView):
-    model = MealPlan
-    template_name = 'plan/delete.html'
-    fields = '__all__'
-    context_object_name = 'meal_plan'
 
-
-class IndexView(TemplateView):
-    template_name = 'plan/index.html'
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['form'] = MealPlanForm()
-        return context
-
-    def post(self, request, *args, **kwargs):
-        form = MealPlanForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('meal_list')
-        return self.render_to_response(self.get_context_data(form=form))
+def DeleteMeal(request, id):
+    meal_to_delete = get_object_or_404(MealPlan, id=id)
+    if request.method == 'POST':
+        meal_to_delete.delete()
+        return redirect('index')
+    return render(request, 'plan/delete.html')

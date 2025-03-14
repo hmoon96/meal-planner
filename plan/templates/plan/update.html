@@ -1,3 +1,6 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +9,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Update Meal Plan</h1>
+    <form method="post">
+        {{ form | crispy }} 
+        {% csrf_token %}
+        <button type="save">Update</button>
+    </form>
 </body>
 </html>
