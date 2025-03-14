@@ -14,5 +14,12 @@
         {% csrf_token %}
         <button type="save">Save</button>
     </form>
+
+{% if errors %}
+    <div class="errors">
+        {{ errors }}
+    </div>
+{% endif %}
+
 </body>
 </html>

@@ -18,8 +18,15 @@ def MealView(request):
 def CreateMeal(request):
     if request.method == "POST":
         plan = MealPlanForm(request.POST)
-        plan.save()
-        return redirect("meal_view")
+        if plan.is_valid():
+            plan.save()
+            return redirect("meal_view")
+        else:
+            context = {
+                "form": plan,
+                "errors": plan.errors,  # Pass form errors to the context
+            }
+            return render(request, 'plan/create.html', context)
     else:
         form = MealPlanForm()
         context = {
