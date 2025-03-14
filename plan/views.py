@@ -3,19 +3,23 @@ from .models import MealPlan
 from .forms import MealPlanForm
 
 
-def MealList(request):
+def Home(request):
+    return render(request, 'plan/home.html')
+
+
+def MealView(request):
     meal_plans = MealPlan.objects.all()
-    context = { 
-        "meal_plans": meal_plans, 
+    context = {
+        "meal_plans": meal_plans,
     }
-    return render(request, 'plan/index.html', context)
+    return render(request, 'plan/view.html', context)
 
 
 def CreateMeal(request):
     if request.method == "POST":
         plan = MealPlanForm(request.POST)
         plan.save()
-        return redirect("index")
+        return redirect("meal_view")
     else:
         form = MealPlanForm()
         context = {
@@ -29,7 +33,7 @@ def UpdateMeal(request, id):
     if request.method == "POST":
         plan = MealPlanForm(request.POST, instance=meal_to_update)
         plan.save()
-        return redirect("index")
+        return redirect("meal_view")
     else:
         form = MealPlanForm(instance=meal_to_update)
         context = {
@@ -38,10 +42,9 @@ def UpdateMeal(request, id):
         return render(request, 'plan/update.html', context)
 
 
-
 def DeleteMeal(request, id):
     meal_to_delete = get_object_or_404(MealPlan, id=id)
     if request.method == 'POST':
         meal_to_delete.delete()
-        return redirect('index')
+        return redirect('meal_view')
     return render(request, 'plan/delete.html')
