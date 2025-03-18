@@ -1,23 +1,42 @@
 {% extends "base.html" %}
+
 {% load static %}
 {% block content %}
 <div>
     <h1>Meal Plans</h1>
     <ul>
-        {% for meal_plan in meal_plans %}
-            <li>
-                <strong>Week of {{ meal_plan.week }}:</strong><br>
-                Monday: {{ meal_plan.monday_food }}<br>
-                Tuesday: {{ meal_plan.tuesday_food }}<br>
-                Wednesday: {{ meal_plan.wednesday_food }}<br>
-                Thursday: {{ meal_plan.thursday_food }}<br>
-                Friday: {{ meal_plan.friday_food }}<br>
-                Saturday: {{ meal_plan.saturday_food }}<br>
-                Sunday: {{ meal_plan.sunday_food }}
-            </li>
-            <a href="{% url 'meal_update' meal_plan.id %}">Update Meal Plan</a>
-            <a href="{% url 'meal_delete' meal_plan.id %}">Delete Meal Plan</a>
-        {% endfor %}
+        <h3><strong>Week of {{ meal_plan.week }}:</strong><br></h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for meal_plan in meal_plans %}
+                <tr></tr>
+                    <td>{{ meal_plan.monday_food }}</td>
+                    <td>{{ meal_plan.tuesday_food }}</td>
+                    <td>{{ meal_plan.wednesday_food }}</td>
+                    <td>{{ meal_plan.thursday_food }}</td>
+                    <td>{{ meal_plan.friday_food }}</td>
+                    <td>{{ meal_plan.saturday_food }}</td>
+                    <td>{{ meal_plan.sunday_food }}</td>
+                    <td>
+                        <a href="{% url 'meal_update' meal_plan.id %}" class="btn btn-primary btn-sm">Update</a>
+                        <a href="{% url 'meal_delete' meal_plan.id %}" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </ul>
     <a href="{% url 'meal_create' %}">Create New Meal Plan</a>
 </div>
