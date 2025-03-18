@@ -55,8 +55,19 @@ Wireframes and theory behind the design
 
 
 **AI**
-I have used CoPilot on a number of occasions to help me:
-1) CoPilot helped me develop my user stories, acceptance criteria and tasks.
+I have used CoPilot and Chat GPT on a number of occasions to help me to:
+1) Develop my user stories, acceptance criteria and tasks.
+2) Develop my code, to implement the CRUD
+
+
+Other resources I have used in this project:
+- https://dbdiagram.io/home/
+- https://miro.com/templates/user-flow/
+- Google Fonts
+- Coolors.co
+- Cloudinary
+- Heroku
+- https://ccbv.co.uk/projects/Django/5.0/
 
 
 
