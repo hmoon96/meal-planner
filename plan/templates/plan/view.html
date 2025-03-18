@@ -1,13 +1,7 @@
 {% extends "base.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal Plans</title>
-</head>
-<body>
+{% load static %}
+{% block content %}
+<div>
     <h1>Meal Plans</h1>
     <ul>
         {% for meal_plan in meal_plans %}
@@ -26,5 +20,5 @@
         {% endfor %}
     </ul>
     <a href="{% url 'meal_create' %}">Create New Meal Plan</a>
-</body>
-</html>
+</div>
+{% endblock %}

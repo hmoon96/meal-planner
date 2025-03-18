@@ -1,15 +1,10 @@
 {% extends "base.html" %}
+
 {% load static %}
 {% load crispy_forms_tags %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% block content %}
+<div>
     <form method="post">
         {{ form | crispy }} 
         {% csrf_token %}
@@ -21,6 +16,5 @@
         {{ errors }}
     </div>
 {% endif %}
-
-</body>
-</html>
+</div>
+{% endblock %}

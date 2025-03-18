@@ -55,3 +55,15 @@ def DeleteMeal(request, id):
         meal_to_delete.delete()
         return redirect('meal_view')
     return render(request, 'plan/delete.html')
+
+
+def SignUp(request):
+    return render(request, 'plan/signup.html')
+
+
+def Login(request):
+    return render(request, 'plan/login.html')
+
+
+def Logout(request):
+    return render(request, 'plan/logout.html')
