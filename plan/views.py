@@ -1,24 +1,29 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import MealPlan
 from .forms import MealPlanForm
+from django.contrib.auth.decorators import login_required
 
 
 def Home(request):
     return render(request, 'plan/home.html')
 
 
+@login_required
 def MealView(request):
-    meal_plans = MealPlan.objects.all()
+    meal_plans = MealPlan.objects.filter(user=request.user)
     context = {
         "meal_plans": meal_plans,
     }
     return render(request, 'plan/view.html', context)
 
 
+@login_required
 def CreateMeal(request):
     if request.method == "POST":
         plan = MealPlanForm(request.POST)
         if plan.is_valid():
+            meal_plan = plan.save(commit=False)
+            meal_plan.user = request.user
             plan.save()
             return redirect("meal_view")
         else:
@@ -35,8 +40,9 @@ def CreateMeal(request):
         return render(request, 'plan/create.html', context)
 
 
+@login_required
 def UpdateMeal(request, id):
-    meal_to_update = get_object_or_404(MealPlan, id=id)
+    meal_to_update = get_object_or_404(MealPlan, id=id, user=request.user)
     if request.method == "POST":
         plan = MealPlanForm(request.POST, instance=meal_to_update)
         plan.save()
@@ -49,8 +55,9 @@ def UpdateMeal(request, id):
         return render(request, 'plan/update.html', context)
 
 
+@login_required
 def DeleteMeal(request, id):
-    meal_to_delete = get_object_or_404(MealPlan, id=id)
+    meal_to_delete = get_object_or_404(MealPlan, id=id, user=request.user)
     if request.method == 'POST':
         meal_to_delete.delete()
         return redirect('meal_view')
