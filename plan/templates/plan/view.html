@@ -4,8 +4,8 @@
 {% block content %}
 <div>
     <h1>Meal Plans</h1>
-    <ul>
-        <h3><strong>Week of {{ meal_plan.week }}:</strong><br></h3>
+    {% for meal_plan in meal_plans %}
+    <h3>Week of {{ meal_plan.week }}:<br></h3>
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -20,8 +20,7 @@
                 </tr>
             </thead>
             <tbody>
-                {% for meal_plan in meal_plans %}
-                <tr></tr>
+                <tr>
                     <td>{{ meal_plan.monday_food }}</td>
                     <td>{{ meal_plan.tuesday_food }}</td>
                     <td>{{ meal_plan.wednesday_food }}</td>
@@ -34,10 +33,10 @@
                         <a href="{% url 'meal_delete' meal_plan.id %}" class="btn btn-danger btn-sm">Delete</a>
                     </td>
                 </tr>
-                {% endfor %}
+                
             </tbody>
         </table>
-    </ul>
-    <a href="{% url 'meal_create' %}">Create New Meal Plan</a>
+    {% endfor %}
+    <a href="{% url 'meal_create' %}" class="btn btn-secondary">Create New Meal Plan</a>
 </div>
 {% endblock %}
