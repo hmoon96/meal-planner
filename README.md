@@ -59,6 +59,52 @@ I have used CoPilot and Chat GPT on a number of occasions to help me to:
 1) Develop my user stories, acceptance criteria and tasks.
 2) Develop my code, to implement the CRUD
 
+1. Navbar and Links
+Issue: Your navbar links were not working correctly.
+Solution:
+Ensured the base.html template used {% url %} tags with correct URL names matching those in urls.py.
+Added conditional logic in the navbar to show "Login," "Register," or "Logout" links based on the user's authentication status.
+2. Restricting Access to Meal Plans
+Issue: Users could view, edit, or delete meal plans that didn't belong to them.
+Solution:
+Updated views (MealView, CreateMeal, UpdateMeal, DeleteMeal) to filter meal plans by the logged-in user using request.user.
+Used get_object_or_404 with user=request.user to ensure only the owner of a meal plan could access it.
+Applied the @login_required decorator to restrict access to authenticated users.
+3. Removing the user Dropdown in the Meal Plan Form
+Issue: The user field appeared as a dropdown in the meal plan creation form.
+Solution:
+Excluded the user field in the MealPlanForm.
+Set the user field programmatically in the CreateMeal view using meal_plan.user = request.user.
+4. Displaying Meal Plans in a Table
+Issue: Meal plans were not displayed in a structured format.
+Solution:
+Updated the view.html template to display meal plans in a Bootstrap-styled table.
+Added an "Actions" column with "Update" and "Delete" buttons for each meal plan.
+5. Fixing the Week Field in Meal Plans
+Issue: The week field was not displaying correctly in the view.html template.
+Solution:
+Ensured the week field was accessed inside the {% for meal_plan in meal_plans %} loop.
+Provided options to display the week for each meal plan or just the first meal plan.
+6. CSS Not Being Applied
+Issue: Your custom CSS was not being applied to the project.
+Solution:
+Verified the STATIC_URL and STATICFILES_DIRS settings in settings.py.
+Ensured the CSS file was correctly linked in base.html using {% static %}.
+Checked the directory structure to confirm the CSS file was in the css folder.
+Suggested clearing the browser cache and using developer tools to debug.
+7. Styling the Project
+Issue: You wanted to apply consistent styling to the project.
+Solution:
+Helped define CSS variables in the :root selector for colors and fonts.
+Styled headings, the navbar, and buttons using the defined variables.
+Ensured the @import rule for Google Fonts was correctly placed at the top of the CSS file.
+8. General Debugging and Best Practices
+Issue: Various errors and inconsistencies in views, templates, and CSS.
+Solution:
+Debugged issues like "media query expected" and missing semicolons in CSS.
+Ensured proper use of Django's template inheritance system with {% block content %}.
+Suggested using get_object_or_404 for secure access to objects in views.
+
 
 Other resources I have used in this project:
 - https://dbdiagram.io/home/

@@ -2,10 +2,31 @@
 {% load static %}
 {% block content %}
 
-<div>
-    <h1>Welcome to PYM - Get Ready to Plan Your Meals!</h1>
-    <a href="{% url 'meal_create' %}">Create New Meal Plan</a>
-    <a href="{% url 'meal_view' %}">View Your Meal Plan</a>
-</div>
+<main>
+    <section class="row align-items-center">
+        <div class="col-6">
+            <img src="{% static 'images/logo.jpg' %}" alt="Logo" class="img-fluid">
+        </div>
+        <div class="col-6">
+            <h1 class="text-center">
+                <i class="fa-solid fa-utensils"></i> Welcome to Plan Your Meals
+            </h1>
+            <p class="text-left">
+                <i class="fa-solid fa-calendar-check"></i> Meal planning is a powerful way to save time, reduce stress, and maintain a healthy lifestyle. 
+                By organizing your meals in advance, you can avoid last-minute decisions, reduce food waste, and stick to your dietary goals. 
+                <br><i class="fa-solid fa-heart"></i> Our app makes meal planning simple and efficient, allowing you to create, view, and manage your weekly meal plans with ease. 
+                Whether you're looking to save money, eat healthier, or streamline your busy schedule, our app is here to help you take control of your meals and enjoy a more organized life.
+            </p>
+        </div>
+        <div>
+            <p>
+                <i class="fa-solid fa-info-circle"></i> This is a simple meal planning app that allows you to create and view your meal plans for the week. 
+                You can create a new meal plan or view your existing meal plans. Get started by clicking on the buttons below.
+            </p>
+        </div>
+    </section>
+    <a href="{% url 'meal_create' %}" class="btn">Create New Meal Plan</a>
+    <a href="{% url 'meal_view' %}" class="btn">View Your Meal Plan</a>
+</main>
 
 {% endblock %}

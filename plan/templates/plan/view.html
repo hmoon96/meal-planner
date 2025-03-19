@@ -3,12 +3,12 @@
 {% load static %}
 {% block content %}
 <div>
-    <h1>Meal Plans</h1>
+    <h1 class="text-center">Meal Plans</h1>
     {% for meal_plan in meal_plans %}
-    <h3>Week of {{ meal_plan.week }}:<br></h3>
+    <h5>Week of {{ meal_plan.week }}<br></h5>
         <table class="table table-striped">
             <thead>
-                <tr>
+                <tr id="table-header">
                     <th>Monday</th>
                     <th>Tuesday</th>
                     <th>Wednesday</th>
@@ -29,14 +29,14 @@
                     <td>{{ meal_plan.saturday_food }}</td>
                     <td>{{ meal_plan.sunday_food }}</td>
                     <td>
-                        <a href="{% url 'meal_update' meal_plan.id %}" class="btn btn-primary btn-sm">Update</a>
-                        <a href="{% url 'meal_delete' meal_plan.id %}" class="btn btn-danger btn-sm">Delete</a>
+                        <a href="{% url 'meal_update' meal_plan.id %}" class="btn btn-sm">Update</a>
+                        <a href="{% url 'meal_delete' meal_plan.id %}" class="btn btn-sm">Delete</a>
                     </td>
                 </tr>
                 
             </tbody>
         </table>
     {% endfor %}
-    <a href="{% url 'meal_create' %}" class="btn btn-secondary">Create New Meal Plan</a>
+    <a href="{% url 'meal_create' %}" class="btn">Create New Meal Plan</a>
 </div>
 {% endblock %}
