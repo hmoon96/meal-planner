@@ -106,6 +106,74 @@ Ensured proper use of Django's template inheritance system with {% block content
 Suggested using get_object_or_404 for secure access to objects in views.
 
 
+### **1. Navbar Styling**
+- **Issue**: You wanted to style the navbar and its elements.
+- **Solution**:
+  - Styled the `.navbar-brand` with a bold font, uppercase text, and hover effects.
+  - Styled `.nav-link` elements with consistent colors and hover effects using your defined CSS variables.
+
+---
+
+### **2. Centering Buttons**
+- **Issue**: The buttons on your `home.html` page were not centered.
+- **Solution**:
+  - Used Bootstrap's `text-center` class to center the buttons.
+  - Added `mx-2` to create spacing between the buttons for a cleaner look.
+
+---
+
+### **3. Bullet Points in Lists**
+- **Issue**: You wanted to remove bullet points from the `<ul>` list in `home.html`.
+- **Solution**:
+  - Used Bootstrap's `list-unstyled` class to remove bullet points.
+  - Provided a custom CSS solution (`list-style-type: none;`) for flexibility.
+
+---
+
+### **4. Adjusting Spacing Between Elements**
+- **Issue**: The `<h6>` and `<p>` elements in `home.html` had too much space between them.
+- **Solution**:
+  - Reduced spacing by using Bootstrap's `mb-*` and `mt-*` classes (e.g., `mb-1`, `mt-0`).
+  - Provided a custom CSS solution for reusable spacing adjustments.
+
+---
+
+### **5. Improving the `<h1>` Heading**
+- **Issue**: You wanted a better `<h1>` heading for your app.
+- **Solution**:
+  - Suggested several engaging and descriptive `<h1>` headings, such as "Plan Your Meals with Ease" and "Effortless Meal Planning Starts Here."
+  - Incorporated Font Awesome icons into the heading for visual appeal.
+
+---
+
+### **6. Styling the Form in `create.html`**
+- **Issue**: The form in `create.html` needed styling to match the rest of the app.
+- **Solution**:
+  - Used Bootstrap classes (`p-4`, `border`, `rounded`, `shadow-sm`, `bg-light`) to style the form.
+  - Styled the "Save" button with `btn btn-primary` for consistency.
+  - Added error messages with `alert alert-danger` for better user feedback.
+  - Provided a custom CSS option for further customization.
+
+---
+
+### **7. Customizing Buttons**
+- **Issue**: You wanted consistent button styling across the app.
+- **Solution**:
+  - Styled buttons globally in style.css using the `.btn` class.
+  - Added hover effects to change the background color and maintain consistency with your app's theme.
+
+---
+
+### **8. General CSS Improvements**
+- **Issue**: You wanted the app's design to feel cohesive.
+- **Solution**:
+  - Used your defined CSS variables (`--primary-color`, `--secondary-color`, etc.) for consistent colors and fonts.
+  - Styled specific elements like `.form`, `.table`, and `#table-header` to match the app's theme.
+
+---
+
+
+
 Other resources I have used in this project:
 - https://dbdiagram.io/home/
 - https://miro.com/templates/user-flow/
