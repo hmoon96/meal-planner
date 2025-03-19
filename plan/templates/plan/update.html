@@ -4,11 +4,14 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<div>
-    <form method="post">
-        {{ form | crispy }} 
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Update Your Meal Plan</h1>
+    <form method="post" class="form p-4 border rounded shadow-sm">
         {% csrf_token %}
-        <button type="save">Update</button>
+        {{ form|crispy }}
+        <div class="text-center mt-3">
+            <button class="btn" type="submit">Save</button>
+        </div>
     </form>
 </div>
 {% endblock %}
