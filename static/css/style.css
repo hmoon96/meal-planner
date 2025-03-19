@@ -83,3 +83,7 @@ p {
     color: var(--text-color);
     font-family: var(--body-font);
 }
+
+.form {
+    font-family: var(--body-font);
+}
