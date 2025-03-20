@@ -33,8 +33,8 @@ p {
 }
 
 /* NavBar */
-#navbar {
-    background-color: var(--primary-color);
+.navbar {
+    background-color: var(--primary-color) !important;
 }
 
 #navbar .nav-link {
@@ -61,10 +61,6 @@ p {
 
 .navbar-toggler {
     background-color: var(--button-color); /* Set the background color */
-}
-
-.bg-body-tertiary {
-    background-color: var(--primary-color); /* Set the background color */
 }
 
 /*Buttons*/
@@ -96,15 +92,21 @@ p {
     font-family: var(--body-font);
 }
 
-.plan {
+.card-body {
+    background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--body-font);
 }
 
+/*Log in / Log Out*/
+.login a {
+    display: none;
+}
+
 /*Footer*/
 
-#footer {
-    background-color: var(--primary-color);
+.footer {
+    background-color: var(--primary-color) !important;
     color: var(--text-color); /* Use your defined text color variable */
     font-family: var(--body-font); /* Use the body font */
 }
