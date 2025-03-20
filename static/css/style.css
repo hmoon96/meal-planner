@@ -59,6 +59,10 @@ p {
     text-decoration: none; /* Remove underline on hover */
 }
 
+.navbar-toggler {
+    background-color: var(--button-color); /* Set the background color */
+}
+
 /*Buttons*/
 .btn {
     background-color: var(--button-color);
@@ -86,4 +90,12 @@ p {
 
 .form {
     font-family: var(--body-font);
+}
+
+/*Footer*/
+
+#footer {
+    background-color: var(--primary-color);
+    color: var(--text-color); /* Use your defined text color variable */
+    font-family: var(--body-font); /* Use the body font */
 }
