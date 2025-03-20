@@ -63,6 +63,10 @@ p {
     background-color: var(--button-color); /* Set the background color */
 }
 
+.bg-body-tertiary {
+    background-color: var(--primary-color); /* Set the background color */
+}
+
 /*Buttons*/
 .btn {
     background-color: var(--button-color);
