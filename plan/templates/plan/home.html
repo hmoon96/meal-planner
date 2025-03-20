@@ -4,45 +4,47 @@
 
 
 <main>
-    <section class="row align-items-center">
-        <div class="col-md-6 text-center">
-            <img src="{% static 'images/logo7.webp' %}" alt="Logo" class="img-fluid w-75">
-        </div>
-        <div class="col-6">
-            <header>
-                <h1 class="text-center mb-3">
-                    Effortless Meal Planning Starts Here
-                </h1>
-            </header>
-            <section>
-                <h6 class="text-left"><strong>Why is Meal Planning useful?</strong></h6>
-                <p class="text-left">
-                    Meal planning is a powerful tool, as it helps you to:
-                    <ul class="list-unstyled"> 
-                        <li><i class="fa-regular fa-clock"></i>  Save time and avoid making last minute decisions mid week</li>
-                        <li><i class="fa-solid fa-apple-whole"></i>  Eat healthier</li>
-                        <li><i class="fa-solid fa-sterling-sign"></i>  Reduce food waste and save money</li>
-                        <li><i class="fa-regular fa-calendar-check"></i>  Streamline your busy schedule, helping to reduce stress</li>
-                    </ul>
-                </p>
-            </section>
-            <section>
-                <h6 class="text-left"><strong>Why use Plan Your Meals?</strong></h6>
-                <p class="mt-0"> Our app makes meal planning simple and efficient, allowing you to create, view, and manage your weekly meal plans with ease.<br> 
-                    Whether you're looking to save money, eat healthier, or streamline your busy schedule, our app is here to help you take control of your meals and enjoy a more organized life.
-                </p>
-            </section>
-        </div>
-        <div class="col-12 text-center mt-4">
-            <h6>
-                Get started by clicking on the buttons below:
-            </h6>
-            <div class="text-center">
-                <a href="{% url 'meal_create' %}" class="btn">Create New Meal Plan</a>
-                <a href="{% url 'meal_view' %}" class="btn">View Your Meal Plan</a>
+    <div class="container">
+        <section class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="{% static 'images/logo7.webp' %}" alt="Logo" class="img-fluid w-75">
             </div>
-        </div>
-    </section>
+            <div class="col-6">
+                <header>
+                    <h1 class="text-center mb-3">
+                        Effortless Meal Planning Starts Here
+                    </h1>
+                </header>
+                <section>
+                    <h6 class="text-left"><strong>Why is Meal Planning useful?</strong></h6>
+                    <p class="text-left">
+                        Meal planning is a powerful tool, as it helps you to:
+                        <ul class="list-unstyled"> 
+                            <li><i class="fa-regular fa-clock"></i>  Save time and avoid making last minute decisions mid week</li>
+                            <li><i class="fa-solid fa-apple-whole"></i>  Eat healthier</li>
+                            <li><i class="fa-solid fa-sterling-sign"></i>  Reduce food waste and save money</li>
+                            <li><i class="fa-regular fa-calendar-check"></i>  Streamline your busy schedule, helping to reduce stress</li>
+                        </ul>
+                    </p>
+                </section>
+                <section>
+                    <h6 class="text-left"><strong>Why use Plan Your Meals?</strong></h6>
+                    <p class="mt-0"> Our app makes meal planning simple and efficient, allowing you to create, view, and manage your weekly meal plans with ease.<br> 
+                        Whether you're looking to save money, eat healthier, or streamline your busy schedule, our app is here to help you take control of your meals and enjoy a more organized life.
+                    </p>
+                </section>
+            </div>
+            <div class="col-12 text-center mt-4">
+                <h6>
+                    Get started by clicking on the buttons below:
+                </h6>
+                <div class="text-center">
+                    <a href="{% url 'meal_create' %}" class="btn">Create New Meal Plan</a>
+                    <a href="{% url 'meal_view' %}" class="btn">View Your Meal Plan</a>
+                </div>
+            </div>
+        </section>
+    </div>
 </main>
 
 {% endblock %}
