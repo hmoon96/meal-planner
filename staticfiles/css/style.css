@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --heading-font: "Dancing Script", sans-serif;
+    --nav-font: "Poppins SemiBold 600", sans-serif;
+    --body-font: "Poppins", sans-serif;
+    --primary-color:  #A3BE8C; /* sage green */
+    --secondary-color: #B48EAD; /* soft lavendar */
+    --text-color: #333333; /* charcoal grey */
+    --background-color: #f1f5e6; /* light cream */
+    --button-color: #4F7942; /* deep green */
+}
+
+/* General Styling */
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+h4, h5, h6 {
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+}
+
+body { 
+    background-color: var(--background-color);
+}
+
+p {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+/* NavBar */
+#navbar {
+    background-color: var(--primary-color);
+}
+
+#navbar .nav-link {
+    color: var(--text-color); /* Use your defined text color variable */
+    font-family: var(--body-font); /* Use the body font */
+}
+
+#navbar .nav-link:hover {
+    color: var(--button-color); /* Optional: Change color on hover */
+}
+
+#navbar .navbar-brand {
+    font-family: var(--nav-font); /* Use the nav font */
+    color: var(--button-color); /* Set the text color */
+    font-size: 1.5rem; /* Adjust the font size */
+    font-weight: bold; /* Make it bold */
+    text-transform: uppercase; /* Optional: Make the text uppercase */
+}
+
+#navbar .navbar-brand:hover {
+    color: var(--font-color); /* Change color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/*Buttons*/
+.btn {
+    background-color: var(--button-color);
+    color: white;
+    font-family: var(--body-font);
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--body-font);
+}
+
+/*View Mealplan*/
+#table-header {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.table {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+
+.form {
+    font-family: var(--body-font);
+}
