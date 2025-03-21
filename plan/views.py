@@ -56,7 +56,6 @@ def UpdateMeal(request, id):
         context = {
             "form": form,
         }
-        messages.error(request, 'Your Meal Plan has not been updated')
         return render(request, 'plan/update.html', context)
 
 

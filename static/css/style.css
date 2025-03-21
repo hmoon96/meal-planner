@@ -110,3 +110,15 @@ p {
     color: var(--text-color); /* Use your defined text color variable */
     font-family: var(--body-font); /* Use the body font */
 }
+
+/*Alert Messages*/
+
+.alert {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    padding: 15px;
+}
+
+.alert-success {
+    background-color: var(--secondary-color);
+}

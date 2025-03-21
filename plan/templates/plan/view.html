@@ -7,7 +7,7 @@
     {% for meal_plan in meal_plans %}
     <div class="card mb-4">
         <div class="card-header">
-            <h5 class="mb-0">Week of {{ meal_plan.week }}</h5>
+            <h6 class="mb-0">Week of {{ meal_plan.week }}</h6>
         </div>
         <div class="card-body" id="card">
             <ul class="list-group">
@@ -27,7 +27,7 @@
     </div>
     {% endfor %}
     <div class="text-center">
-        <a href="{% url 'meal_create' %}" class="btn mt-2 justify-content-center">Create New Meal Plan</a>
+        <a href="{% url 'meal_create' %}" class="btn mt-2 mb-3 justify-content-center">Create New Meal Plan</a>
     </div>
 </div>
 {% endblock %}
