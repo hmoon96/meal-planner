@@ -33,7 +33,6 @@ def CreateMeal(request):
                 "form": plan,
                 "errors": plan.errors,  # Pass form errors to the context
             }
-            messages.error(request, 'Your Meal Plan has not been created')
             return render(request, 'plan/create.html', context)
     else:
         form = MealPlanForm()
