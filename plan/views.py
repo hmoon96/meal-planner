@@ -11,7 +11,7 @@ def Home(request):
 
 @login_required
 def MealView(request):
-    meal_plans = MealPlan.objects.filter(user=request.user)
+    meal_plans = MealPlan.objects.filter(user=request.user).order_by('-week')
     context = {
         "meal_plans": meal_plans,
     }
