@@ -4,20 +4,17 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<div class="container mt-5">
-    <h1 class="text-center mb-4">Create a New Meal Plan</h1>
-    <form method="post" class="form p-4 border rounded shadow-sm">
+<div class="container mt-4">
+    <form method="post">
+        {{ form | crispy }} 
         {% csrf_token %}
-        {{ form|crispy }}
-        <div class="text-center mt-3">
-            <button class="btn" type="submit">Save</button>
-        </div>
+        <button class="btn mb-3" type="save">Save</button>
     </form>
 
-    {% if errors %}
-    <div class="alert alert-danger mt-3">
+{% if errors %}
+    <div class="errors">
         {{ errors }}
     </div>
-    {% endif %}
+{% endif %}
 </div>
 {% endblock %}

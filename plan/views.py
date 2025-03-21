@@ -48,9 +48,17 @@ def UpdateMeal(request, id):
     meal_to_update = get_object_or_404(MealPlan, id=id, user=request.user)
     if request.method == "POST":
         plan = MealPlanForm(request.POST, instance=meal_to_update)
-        plan.save()
-        messages.success(request, 'Meal plan updated successfully')
-        return redirect("meal_view")
+        if plan.is_valid():
+            plan.save()
+            messages.success(request, 'Meal plan updated successfully')
+            return redirect("meal_view")
+        else:
+            context = {
+                "form": plan,
+                "errors": plan.errors,  # Pass form errors
+            }
+            message.error(request, 'There were errors in your form, please make sure every box is filled in.')
+            return render(request, 'plan/update.html', context)
     else:
         form = MealPlanForm(instance=meal_to_update)
         context = {

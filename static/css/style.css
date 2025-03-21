@@ -121,4 +121,11 @@ p {
 
 .alert-success {
     background-color: var(--secondary-color);
+    font-family: var(--body-font)
+}
+
+.alert-danger {
+    background-color: var(--button-color);
+    font-family: var(--body-font);
+    color: var(--background-color);
 }
