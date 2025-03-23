@@ -58,6 +58,12 @@ Wireframes and theory behind the design
 |Homepage | Create New Meal Plan Button | Click | Takes the user to the create a meal plan page If not logged in, it takes users to the sign in page.|
 
 
+## Lighthouse
+
+![alt text](image.png)
+
+
+
 **AI**
 I have used CoPilot and Chat GPT on a number of occasions to help me to:
 1) Develop my user stories, acceptance criteria and tasks.
