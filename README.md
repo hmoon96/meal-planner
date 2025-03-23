@@ -52,6 +52,10 @@ Examples
 ## UI 
 Wireframes and theory behind the design
 
+## Manual Testing
+| Page |     Feature     |            Action            |                     Effect               |
+|------|-----------------|------------------------------|------------------------------------------|
+|Homepage | Create New Meal Plan Button | Click | Takes the user to the create a meal plan page If not logged in, it takes users to the sign in page.|
 
 
 **AI**
