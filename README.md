@@ -56,6 +56,36 @@ Wireframes and theory behind the design
 | Page |     Feature     |            Action            |                     Effect               |
 |------|-----------------|------------------------------|------------------------------------------|
 |Homepage | Create New Meal Plan Button | Click | Takes the user to the create a meal plan page If not logged in, it takes users to the sign in page.|
+|Homepage | View New Meal Plan Button | Click | Takes the user to the view your meal plans page. If not logged in, it takes users to the sign in page. |
+|Navbar | Site initials (PYM) | Click | Sends the user to the homepage from all other pages. |
+|Navbar | Create | Click | Takes the user to the create a meal plan page If not logged in, it takes users to the sign in page.|
+|Navbar | Home | Click | Sends the user to the homepage from all other pages. |
+|Navbar | View | Click | Takes the user to the view your meal plans page. If not logged in, it takes users to the sign in page. |
+|Navbar | Sign Up | Click | Takes the user to the sign up page to make an account. |
+|Navbar | Sign In | Click | Takes the user to the sign in page to sign into their account. |
+|Sign In Page | Sign up link | Click | Takes the user to the sign up page if they don’t have an account. |
+|Sign In Page | Username Validation | Enter incorrect username | Error message “The username and/or password you specified are not correct”. |
+|Sign In Page | Password Validation | Enter incorrect password | Error message “The username and/or password you specified are not correct”. |
+|Sign In Page | Remember Me  | Tick box | Keeps the user signed in. |
+|Sign In Page | Sign In Button | Click | Signs the user in and redirects to the home page. A success message pops up. |
+|Sign Out Page | Sign Out Button | Click | Signs the user out and redirects the user to the homepage. A success message pops up. |
+|Sign Out Page | Cancel Button | Click | Leaves the user signed in and redirects to the homepage. |
+|Sign Up Page | Username Validation | Typed Username that exists | Error message “A user with that username already exists” - account not created. |
+|Sign Up Page | Password Validation | Typed password that doesn’t match the requirements | Error message that informs the user the exact issue with the password and doesn’t create the account. |
+|Sign Up Page | Password Validation | Typed two passwords that didn’t match | Error message “You must type the same password each time” and the account isn’t created.|
+Sign Up Page | Sign In | Click | This takes the user to the sign in page if they have an account already. |
+Sign Up Page | Sign up button | Click | When all of the fields are filled in correctly, it creates the account, logs the user in and redirects the user to the home page. A success notification is shown. |
+Create Meal Plan Page | Week box | Select date from calendar | This sets the date for the meal plan, which is displayed in the View Meal Plan page. |
+Create Meal Plan Page | Week box | No date selected | The form doesn’t submit and skips back to the right section, so the user can select a date. |
+Create Meal Plan Page | Food boxes | Text in all boxes | Text is shown in the View Meal Plan Page |
+Create Meal Plan Page | Food boxes | Any text box empty | The form doesn’t submit and skips back to the right section, so the user can fill out the box. |
+Create Meal Plan Page | Save | Click | Meal plan created and the user is redirected to the View Meal plans page, where they can see their plan. Success notification displayed. |
+View Meal Plan Page | Create New Meal Plan Button | Click | Takes the user to the Create a Meal Plan page. |
+View Meal Plan Page | Update | Click | Takes the user to the Update your Meal Plan page for that specific plan. |
+View Meal Plan Page | Delete | Click | Takes the user to the Delete page. |
+Update Meal Plan Page | Save | Click | Saves any changes that have been made. Redirects the user back to the view page and the changes are displayed. Success message is shown. |
+Delete Meal Plan Page | Yes, Delete | Click | Deletes the plan. Redirects the user back to the view page and the plan will be gone. Success message is shown. |
+Delete Meal Plan Page | No, Take Me Home | Click | Takes the user back to the view page. The plan will not be deleted and the view will remain unchanged. |
 
 
 ## Lighthouse
