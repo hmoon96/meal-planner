@@ -104,7 +104,18 @@ Delete Meal Plan Page | No, Take Me Home | Click | Takes the user back to the vi
 
 ## Code Validation
 ### HTML
+| HTML Doc | Passed Validation? (No Errors) | Any warnings? |
+| home.html | Yes, no errors | Two |
+| create.html | Yes, no errors | No |
+| view.html (when there are no meal plans to view | Yes, no errors | No |
+| view.html (when there are three meal plans to view | Yes, no errors | No |
+| update.html | Yes, no errors | No |
+| delete.html | Yes, no errors | No |
+
+All files were validated using https://validator.w3.org/ 
+
 ### CSS
+I checked the only CSS file for the project (style.css) and there were no errors. I used https://jigsaw.w3.org/css-validator/validator
 ### Python
 
 ## AI
