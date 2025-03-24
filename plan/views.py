@@ -56,7 +56,6 @@ def UpdateMeal(request, id):
                 "form": plan,
                 "errors": plan.errors,  # Pass form errors
             }
-            message.error(request, 'There were errors in your form, please make sure every box is filled in.')
             return render(request, 'plan/update.html', context)
     else:
         form = MealPlanForm(instance=meal_to_update)
