@@ -93,6 +93,11 @@ Delete Meal Plan Page | No, Take Me Home | Click | Takes the user back to the vi
 ## Lighthouse
 
 ![alt text](image-1.png)
+### Laptop 
+![image](https://github.com/user-attachments/assets/73def77b-5120-404d-8896-28e4be7ac12f)
+
+### Mobile 
+![image](https://github.com/user-attachments/assets/9132ff42-1a1f-4bec-b07e-1df51ad61dda)
 
 
 
