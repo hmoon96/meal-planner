@@ -1,5 +1,5 @@
 # PYM - Plan Your Meals
-A resource to help busy families save time and money.
+A resource to help busy people save time and money.
 
 ![alt text](all-devices-black.png)
 
@@ -18,13 +18,12 @@ My meal planning app aims to provide a straightforward and intuitive solution, a
 **Draft** My primary target audience includes busy professionals, families, and anyone looking for help planning their weekly meals. This can be anyone that would benefot from saving time, money or both.
 
 ## Minimum Viable Product
-The MVP will include a meal planner, which will be in the form of a table. There will be the days of the week across the top, and Breakfast, Lunch and Dinner down the side. Users will then be able to type the meals they are going to eat into each of these boxes. As users will be able to log in, they will have the opportunity to save, update and delete aspects of their planner, so it is always up to date. 
+The MVP will include a meal planner, which will be in the form of a card. There will be the days of the week listed in the card and users will then be able to type the meals they are going to eat into each of these boxes. As users will be able to log in, they will have the opportunity to save, update and delete aspects of their planner, so it is always up to date. The meal plans will be listed from most recent at the top and be listed in reverse order, so the most recent plan will be most easily visible. The other plans will be listed below, so it is easy to scroll down and get inspiration from past meal plans.
 
 ### Key Features
 **Simple and intuitive UX** - This will be straightforward to use from the get go, making meal planning easier, not adding more challenge.\
 **User authentication** - Users will be able to login to their own accounts, meaning their meal plans are safe and saved to look back on. \
 **CRUD functionality** - Users will be able to create, view, edit and delete their meal plans as they wish, making it fully adaptable.\
-**Multiple users per account** - Allowing multiple users to be able to access one account makes this app much more user friendly for families. This creates a centralised space for collaboration, making the meal planning process efficient and adaptable to all families.\ 
 **Responsive design** - This will be responsive across all screen sizes, making it easy to edit your meal plan, no matter the device.\
 
 ## Other Features - Prioritisation
@@ -105,10 +104,11 @@ Delete Meal Plan Page | No, Take Me Home | Click | Takes the user back to the vi
 ## Code Validation
 ### HTML
 | HTML Doc | Passed Validation? (No Errors) | Any warnings? |
+|----------|--------------------------------|---------------|
 | home.html | Yes, no errors | Two |
 | create.html | Yes, no errors | No |
-| view.html (when there are no meal plans to view | Yes, no errors | No |
-| view.html (when there are three meal plans to view | Yes, no errors | No |
+| view.html (when there are no meal plans to view) | Yes, no errors | No |
+| view.html (when there are three meal plans to view) | Yes, no errors | No |
 | update.html | Yes, no errors | No |
 | delete.html | Yes, no errors | No |
 
