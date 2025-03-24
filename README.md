@@ -116,7 +116,9 @@ All files were validated using https://validator.w3.org/
 
 ### CSS
 I checked the only CSS file for the project (style.css) and there were no errors. I used https://jigsaw.w3.org/css-validator/validator
+
 ### Python
+All of the PY files were tested twice. Throughout the process with the Flake8 extension in VS Code and at the end, with the Code Institute Linter - https://pep8ci.herokuapp.com/# 
 
 ## AI
 I have used CoPilot and Chat GPT on a number of occasions to help me to:
