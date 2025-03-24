@@ -49,7 +49,17 @@ Paste diagram and explain
 Examples and link to Canban board
 
 ## UX Design 
-### Wireframes and theory behind the design
+### Wireframes 
+This is how I designed the landing page. I wanted it to have a simple and clean design, which is intuitive for users. I decided to have a hero image, to add a vibrancy to the app from the get go, then include a little bit of information about the purpose of the app below. I also made the nav bar and buttons clear, so the users can easily log in, log out, sign up, create and view plans from the home screen.
+![Landing Page](https://github.com/user-attachments/assets/2bb84854-a69c-48f2-96f3-ccf9d9538e7d) /
+
+The Mobile, Tablet and Laptop views of the viewing screen were designed as a table. The idea behind this was that it would be easier for the user to read which meals were for which day. However, as my design evolved, I decided to change this layout to a Bootstrap card. This is because it was easier to make this responsive across all screen sizes, therefore a better User Experience overall. From this page, users can update and delete their plans, completing the CRUD functionality designed.
+![Mobile Planner View](https://github.com/user-attachments/assets/0e309fd0-03ba-40bc-a904-02038f8cf4cf) /
+
+![Tablet Planner View copy](https://github.com/user-attachments/assets/67abf89e-4f82-4dfd-a1f6-fc297f0cd863) /
+
+![Laptop Planner View ](https://github.com/user-attachments/assets/dde788fd-68f6-4e5d-bc16-ba0a41e08cb6) /
+
 ### Fonts
 ### Colours
 
