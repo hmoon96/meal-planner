@@ -1,6 +1,8 @@
 # PYM - Plan Your Meals
 A resource to help busy families save time and money.
 
+![alt text](all-devices-black.png)
+
 ## Key Features
 **Simple and intuitive UX** - This will be straightforward to use from the get go, making meal planning easier, not adding more challenge.\
 **User authentication** - Users will be able to login to their own accounts, meaning their meal plans are safe and saved to look back on. \
@@ -90,7 +92,7 @@ Delete Meal Plan Page | No, Take Me Home | Click | Takes the user back to the vi
 
 ## Lighthouse
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 
 
