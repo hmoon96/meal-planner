@@ -1,30 +1,33 @@
 # PYM - Plan Your Meals
-A resource to help busy people save time and money.
+
+PYM aims to provide a straightforward and intuitive solution, as it will allow individuals to plan and keep track of their meals for the week. This will allow individuals to reduce stress, save money and improve health.
+
 
 ![alt text](all-devices-black.png)
 
-## Our Why
-**Draft**
+## Purpose
 Life is busy. Many families struggle to stay organised and plan their meals effectively, potentially leading to increased stress, a more expensive food bill and a less nutritious diet.
-In addition to the general stresses of day to day life, we are going through a cost of living crisis. The House of Commons reported in 2022/23 that around 11% of households live in food poverty. As such, it is more important than ever to start being more savvy with our money. This is where PYM comes in. Using PYM to help you plan your meals every week can help you can help make your money go further and reduce your food waste. 
+In addition to the general stresses of day to day life, we are going through a cost of living crisis. The House of Commons reported in 2022/23 that around 11% of households live in food poverty. As such, it is more important than ever to start being more savvy with our money. This is where PYM comes in. Using PYM to help you plan your meals every week can help make your money go further and reduce your food waste. 
 
-### Purpose
-**Draft**
-Our purpose is simple - to help our users plan their meals, saving their time and money.
-
-My meal planning app aims to provide a straightforward and intuitive solution, as it will allow individuals to plan and keep track of their meals for the week. This will allow individuals to reduce stress, save money and improve health.
+So, our purpose is simple - to help our users plan their meals, saving their time and money.
 
 ### Target Audience
-**Draft** My primary target audience includes busy professionals, families, and anyone looking for help planning their weekly meals. This can be anyone that would benefot from saving time, money or both.
+Our primary target audience includes busy professionals, families, and anyone looking for help planning their weekly meals. This can be anyone that would benefit from saving time, money or both.
+
+### Key Aims
+**Simple and intuitive UX** - This will be straightforward to use from the get go, making meal planning easier, not adding more challenge.\
+**User authentication** - Users will be able to login to their own accounts, meaning their meal plans are safe and saved to look back on. \
+**CRUD functionality** - Users will be able to create, view, edit and delete their meal plans as they wish, making it fully adaptable.\
+**Responsive design** - This will be responsive across all screen sizes, making it easy to edit your meal plan, no matter the device.\
 
 ## Minimum Viable Product
 The MVP will include a meal planner, which will be in the form of a card. There will be the days of the week listed in the card and users will then be able to type the meals they are going to eat into each of these boxes. As users will be able to log in, they will have the opportunity to save, update and delete aspects of their planner, so it is always up to date. The meal plans will be listed from most recent at the top and be listed in reverse order, so the most recent plan will be most easily visible. The other plans will be listed below, so it is easy to scroll down and get inspiration from past meal plans.
 
 ### Key Features
-**Simple and intuitive UX** - This will be straightforward to use from the get go, making meal planning easier, not adding more challenge.\
-**User authentication** - Users will be able to login to their own accounts, meaning their meal plans are safe and saved to look back on. \
-**CRUD functionality** - Users will be able to create, view, edit and delete their meal plans as they wish, making it fully adaptable.\
-**Responsive design** - This will be responsive across all screen sizes, making it easy to edit your meal plan, no matter the device.\
+**Homepage**
+The User first views the homepage. 
+![image](https://github.com/user-attachments/assets/e065b09f-5cb5-4c11-967f-307036571762)
+
 
 ## Other Features - Prioritisation
 There are other features that I would like to include to enhance the user experience and make the app even more useful. I will list these in order of priority:
