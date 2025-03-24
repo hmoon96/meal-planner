@@ -8,7 +8,7 @@
     <form method="post">
         {{ form | crispy }} 
         {% csrf_token %}
-        <button class="btn mb-3" type="save">Save</button>
+        <button class="btn mb-3" type="submit">Save</button>
     </form>
 
 {% if errors %}
