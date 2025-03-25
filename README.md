@@ -85,14 +85,39 @@ For each of the user stories, there are acceptance criteria and tasks, to really
 Link to the Canban Board: https://github.com/users/hmoon96/projects/10 
 
 ### Database Structure and relationships
-Models
+**Models**
+In my project, I used a PostgreSQL database to store User data. Within this database, I used two models:
 
-![image](https://github.com/user-attachments/assets/144720bf-992d-4460-be49-d8541c1e8a59)
+#### User Model
+The first is the User Model. This uses the Django Built in model to structure the user log in information.
+- id (Primary Key, Default in Django model)
+- Username (VarCharField, Unique)
+- Email (EmailField)
+- Password (VarCharField)
+
+#### MealPlan Model 
+The Meal Plan model is a custom model. It represents the Users Meal Plans. Each meal plan is associated with a user account (through the User Foreign Key). Only the meal plans that were created by the user are visable to that user, they cannot see anyone else's meal plans. When a User is deleted, all of their meal plans are deleted too. 
+| Field | Value | Purpose |
+|-------|-------|---------|
+| User | models.ForeignKey | This connects the User account to the individual meal plans | 
+| Week | models.DateField() | This allows the User to open the calendar and select the date for the meal plan to start. This helps with the structure of the meal plans on the View Meal Plans page |
+| monday_food | models.TextField() | Users can write their food for this day in the box, which will then be saved to the plan |
+| tuesday_food | models.TextField() | Users can write their food for this day in the box, which will then be saved to the plan |
+| wednesday_food | models.TextField() | Users can write their food for this day in the box, which will then be saved to the plan |
+| thursday_food | models.TextField() | Users can write their food for this day in the box, which will then be saved to the plan |
+| friday_food | models.TextField() | Users can write their food for this day in the box, which will then be saved to the plan |
+| saturday_food | models.TextField() | Users can write their food for this day in the box, which will then be saved to the plan |
+| sunday_food | models.TextField() | Users can write their food for this day in the box, which will then be saved to the plan |
+
+#### Database model diagram
+Please find below the database model diagram. I have made some changes to the model as I developed, such as removing the created at and updated on timestamps. This is because I didn't believe that they really served a purpose or added to the UX. 
+
+![Database Model Diagram](docs/images/database_diagram.png)
 
 ### User Flow Diagram
-Paste diagram and explain
+Below is my User Flow Diagram. This is a simple structure, which aims to fulfill the purpose of being a simple and intuative app. Although there have been some changes to the flow throughout the development process, the core of this structure has remained the same. Users cannot perform any of the CRUD functions without logging it, as the meal plans need to be linked to a user in the database. 
 
-![image](https://github.com/user-attachments/assets/ce7145b7-25b5-4f1a-aba3-96881aae28a5)
+![User Flow Diagram](docs/images/flowchart.png)
 
 ## UX Design 
 ### Wireframes 
