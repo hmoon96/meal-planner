@@ -66,9 +66,9 @@ There are other features that I would like to include to enhance the user experi
 
 ### User Stories and Agile Methodology
 
-I have been using a Canban board to structure my time and ensure that I meet the MVP. 
+I have been using a Kanban board to ensure I work in an Agile way and meet the MVP on time. 
 
-This Canban Board includes the following 8 User Stories:
+This Kanban Board includes the following 8 User Stories:
 - User Story 1: As a user, I want to create a weekly meal plan so that I can stay organized and plan my meals effectively.
 - User Story 2: As a user, I want to view my weekly meal plan so that I can see what meals I have planned for the week.
 - User Story 3: As a user, I want to edit my weekly meal plan so that I can make changes to my planned meals.
