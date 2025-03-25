@@ -376,17 +376,42 @@ I have used both CoPilot and ChatGPT throughout this project. It has been a grea
 
 ## Deployment and how to deploy
 
-## Libraries and Programmes Used
-- https://dbdiagram.io/home/
-- https://miro.com/templates/user-flow/
-- Google Fonts
-- Coolors.co
-- Cloudinary
-- Heroku
-- https://ccbv.co.uk/projects/Django/5.0/
-- https://websitemockupgenerator.com/
+## Technologies Used
+### Backend
+- **Python**: Programming language used for the backend.
+- **Django**: Web framework for building the application.
+  - `django.shortcuts`: Helper functions for views.
+  - `django.contrib.auth.decorators`: Used for authentication and access control.
+  - `django.contrib.messages`: Framework for displaying notifications.
+  - `django.db.models`: ORM for database management.
+- **PostgreSQL**: Database used for development.
+
+### Frontend
+- **HTML5**: For structuring the templates.
+- **CSS3**: For custom styling.
+- **Bootstrap**: CSS framework for responsive design and styling.
+
+### Tools
+- **Visual Studio Code (VS Code)**: IDE used for development.
+- **Django Development Server**: For testing the application locally.
+- **Browser Developer Tools**: For debugging frontend issues.
+
+### Additional Libraries
+- **Font Awesome**: For adding icons to the application.
 
 ### Other Resources
 https://commonslibrary.parliament.uk/research-briefings/cbp-9209/
+- **Heroku** - Used to deploy the project (https://www.heroku.com/)
+- **Db Diagram** - Used to create my database diagram (https://dbdiagram.io/home/)
+- **Miro** - Used to create my User Flow Diagram (https://miro.com/templates/user-flow/)
+- **Google Fonts** - Used to find and import my correct fonts 
+- **Coolors.co** - Used to help find colours and decide my colour scheme
+- **Cloudinary** - Used to store my hero image for deployment
+- **Git** - Used for Version Control via GitHub.
+- **Github** - Used to store my project. GitHub project board allowed me to work in an Agile way through the creation of my Kanban board. 
+- **Flake8** - VS Code extension used for inbuilt Linting support when developing my Python Code.
+- https://ccbv.co.uk/projects/Django/5.0/ - Used for help developing Django code and troubleshooting issues.
+- https://docs.djangoproject.com/ - Used for help developing Django code and troubleshooting issues.
+- https://websitemockupgenerator.com/ - Used to create my Website Mock Up for the README.
 
 ## Credits
