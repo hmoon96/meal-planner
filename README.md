@@ -3,7 +3,7 @@
 PYM aims to provide a straightforward and intuitive solution, as it will allow individuals to plan and keep track of their meals for the week. This will allow individuals to reduce stress, save money and improve health.
 
 
-![alt text](all-devices-black.png)
+![Website Mockup](all-devices-black.png)
 
 ## Purpose
 Life is busy. Many families struggle to stay organised and plan their meals effectively, potentially leading to increased stress, a more expensive food bill and a less nutritious diet.
@@ -24,10 +24,17 @@ Our primary target audience includes busy professionals, families, and anyone lo
 The MVP will include a meal planner, which will be in the form of a card. There will be the days of the week listed in the card and users will then be able to type the meals they are going to eat into each of these boxes. As users will be able to log in, they will have the opportunity to save, update and delete aspects of their planner, so it is always up to date. The meal plans will be listed from most recent at the top and be listed in reverse order, so the most recent plan will be most easily visible. The other plans will be listed below, so it is easy to scroll down and get inspiration from past meal plans.
 
 ### Key Features
-**Homepage**
+**Homepage** \
 The User first views the homepage. 
 ![image](https://github.com/user-attachments/assets/e065b09f-5cb5-4c11-967f-307036571762)
 
+**Create your Meal Plan**
+
+**View your Meal Plans**
+
+**Update your Meal Plan**
+
+**Delete your Meal Plan**
 
 ## Other Features - Prioritisation
 There are other features that I would like to include to enhance the user experience and make the app even more useful. I will list these in order of priority:
@@ -263,6 +270,7 @@ Suggested using get_object_or_404 for secure access to objects in views.
 - Cloudinary
 - Heroku
 - https://ccbv.co.uk/projects/Django/5.0/
+- https://websitemockupgenerator.com/
 
 ### Other Resources
 https://commonslibrary.parliament.uk/research-briefings/cbp-9209/
