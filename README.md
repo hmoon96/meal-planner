@@ -86,10 +86,12 @@ Link to the Canban Board: https://github.com/users/hmoon96/projects/10
 
 ### Database Structure and relationships
 Models
+
 ![image](https://github.com/user-attachments/assets/144720bf-992d-4460-be49-d8541c1e8a59)
 
 ### User Flow Diagram
 Paste diagram and explain
+
 ![image](https://github.com/user-attachments/assets/ce7145b7-25b5-4f1a-aba3-96881aae28a5)
 
 ## UX Design 
@@ -97,7 +99,8 @@ Paste diagram and explain
 This is how I designed the landing page. I wanted it to have a simple and clean design, which is intuitive for users. I decided to have a hero image, to add a vibrancy to the app from the get go, then include a little bit of information about the purpose of the app below. I also made the nav bar and buttons clear, so the users can easily log in, log out, sign up, create and view plans from the home screen.
 ![Landing Page](https://github.com/user-attachments/assets/2bb84854-a69c-48f2-96f3-ccf9d9538e7d) /
 
-The Mobile, Tablet and Laptop views of the viewing screen were designed as a table. The idea behind this was that it would be easier for the user to read which meals were for which day. However, as my design evolved, I decided to change this layout to a Bootstrap card. This is because it was easier to make this responsive across all screen sizes, therefore a better User Experience overall. From this page, users can update and delete their plans, completing the CRUD functionality designed./
+The Mobile, Tablet and Laptop views of the viewing screen were designed as a table. The idea behind this was that it would be easier for the user to read which meals were for which day. However, as my design evolved, I decided to change this layout to a Bootstrap card. This is because it was easier to make this responsive across all screen sizes, therefore a better User Experience overall. From this page, users can update and delete their plans, completing the CRUD functionality designed.
+
 ![Mobile Planner View](https://github.com/user-attachments/assets/0e309fd0-03ba-40bc-a904-02038f8cf4cf) /
 
 ![Tablet Planner View copy](https://github.com/user-attachments/assets/67abf89e-4f82-4dfd-a1f6-fc297f0cd863) /
@@ -112,7 +115,7 @@ The font for the H1 elements is Dancing Script. This is a handwritten, cursive f
 The font for the body of the site was Poppins. This is a modern sans-serif font, making it very easy to read. It still adds to the friendly, supportive feel of the site. 
 
 ### Colours
-The colours were also chosen to evoke calmness for the User, and convey friendliness. \
+The colours were also chosen to evoke calmness for the User, and convey friendliness. 
 - The background is a very light shade of green, to add a freshness to the site but maintain the readability, without using white.
 - The navbar is a different, darker shade of light, sage green. This keeps a calm, fresh and friendly feel.
 - The buttons continued with the green theme, this time with a dark forest type of green. This maintains the colour scheme but adding matching accents.
@@ -120,7 +123,28 @@ The colours were also chosen to evoke calmness for the User, and convey friendli
 - The secondary colour chosen was a darker lavendar purple. This is a gentle colour which pairs well with the sage green and adds a classy, calming touch to the app.
 
 ## Responsiveness
-Include Screenshots
+Using Chrome DevTools, I have been able to screenshot how my app is responsive across multiple screensizes.
+
+iPhone 12 Pro:
+
+![Home on Mobile](docs/images/screenshots/responsivness_mobile_home.png) ![Create page on Mobile](docs/images/screenshots/responsivness_mobile_create.png) 
+![View Meal Plans on Mobile](docs/images/screenshots/responsivness_mobile_view.png) ![Update Meal Plans on Mobile](docs/images/screenshots/responsivness_mobile_update.png) 
+![Delete page on Mobile](docs/images/screenshots/responsivness_mobile_delete.png) 
+
+iPad Pro:
+
+![Home on Tablet](docs/images/screenshots/responsivness_tablet_home.png) ![Create page on Tablet](docs/images/screenshots/responsivness_tablet_create.png) 
+![View Meal Plans on Tablet](docs/images/screenshots/responsivness_tablet_view.png) ![Update Meal Plans on Tablet](docs/images/screenshots/responsivness_tablet_update.png) 
+![Delete page on Tablet](docs/images/screenshots/responsivness_tablet_delete.png) 
+
+Laptop:
+
+![Homepage screenshot](docs/images/screenshots/pym_homepage.png)
+![Create your Meal Plan screenshot](docs/images/screenshots/pym_create.png) 
+![View your Meal Plan screenshot](docs/images/screenshots/pym_view.png) 
+![Update your Meal Plan screenshot](docs/images/screenshots/pym_update.png) 
+![Delete your Meal Plan screenshot](docs/images/screenshots/pym_delete.png) 
+
 
 ## Manual Testing
 | Page |     Feature     |            Action            |                     Effect               |
@@ -159,13 +183,54 @@ Delete Meal Plan Page | No, Take Me Home | Click | Takes the user back to the vi
 
 
 ## Lighthouse
+I generated Lighthouse reports for my app. The results are below: 
 
-![alt text](image-1.png)
 ### Laptop 
-![image](https://github.com/user-attachments/assets/73def77b-5120-404d-8896-28e4be7ac12f)
+- Home
+  
+![Lighthouse Score - Homepage](docs/images/screenshots/home.html_desktop_lighthouse.png)
+
+- Create
+
+![Lighthouse Score - Create page](docs/images/screenshots/create.html_desktop_lighthouse.png)
+
+- View
+
+![Lighthouse Score - View Meal Plans Page](docs/images/screenshots/view.html_desktop_lighthouse.png)
+
+- Update
+
+![Lighthouse Score - Update page](docs/images/screenshots/update.html_desktop_lighthouse.png)
+
+- Delete
+
+![Lighthouse Score - Delete page](docs/images/screenshots/delete.html_desktop_lighthouse.png)
+
 
 ### Mobile 
-![image](https://github.com/user-attachments/assets/9132ff42-1a1f-4bec-b07e-1df51ad61dda)
+- Home
+  
+![Lighthouse Score - Homepage](docs/images/screenshots/home.html_mobile_lighthouse.png)
+
+- Create
+
+![Lighthouse Score - Create page](docs/images/screenshots/create.html_mobile_lighthouse.png)
+
+- View
+
+![Lighthouse Score - View Meal Plans Page](docs/images/screenshots/view.html_mobile_lighthouse.png)
+
+- Update
+
+![Lighthouse Score - Update page](docs/images/screenshots/update.html_mobile_lighthouse.png)
+
+- Delete
+
+![Lighthouse Score - Delete page](docs/images/screenshots/delete.html_mobile_lighthouse.png)
+
+### To note
+Although the Best Practice, Accessibility and SEO scores were consistently 100 throughout testing, the performance score seemed to differ. This depended on whether I was testing the performance on a mobile or a laptop. The laptop score is higher than the mobile, with scores or 98 and 99 across the board. The mobile score has been as low as 85 and as high as 93, depending on the time of testing and the page being tested.
+
 
 ## Code Validation
 ### HTML
