@@ -125,7 +125,3 @@ p {
     font-family: var(--body-font);
     color: var(--background-color);
 }
-
-.link {
-    color: var(--button-color);
-}
