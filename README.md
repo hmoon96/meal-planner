@@ -298,124 +298,81 @@ But this is what it looks like in VS Code:
 
 
 ## AI
-I have used CoPilot and Chat GPT on a number of occasions to help me to:
-1) Develop my user stories, acceptance criteria and tasks.
-2) Develop my code, to implement the CRUD
+I have used both CoPilot and ChatGPT throughout this project. It has been a great tool, to help me to troubleshoot and give me advice. I've included a cummary below of how AI has supported me throughout the project.
 
-1. Navbar and Links
-Issue: Your navbar links were not working correctly.
-Solution:
-Ensured the base.html template used {% url %} tags with correct URL names matching those in urls.py.
-Added conditional logic in the navbar to show "Login," "Register," or "Logout" links based on the user's authentication status.
-2. Restricting Access to Meal Plans
-Issue: Users could view, edit, or delete meal plans that didn't belong to them.
-Solution:
-Updated views (MealView, CreateMeal, UpdateMeal, DeleteMeal) to filter meal plans by the logged-in user using request.user.
-Used get_object_or_404 with user=request.user to ensure only the owner of a meal plan could access it.
-Applied the @login_required decorator to restrict access to authenticated users.
-3. Removing the user Dropdown in the Meal Plan Form
-Issue: The user field appeared as a dropdown in the meal plan creation form.
-Solution:
-Excluded the user field in the MealPlanForm.
-Set the user field programmatically in the CreateMeal view using meal_plan.user = request.user.
-4. Displaying Meal Plans in a Table
-Issue: Meal plans were not displayed in a structured format.
-Solution:
-Updated the view.html template to display meal plans in a Bootstrap-styled table.
-Added an "Actions" column with "Update" and "Delete" buttons for each meal plan.
-5. Fixing the Week Field in Meal Plans
-Issue: The week field was not displaying correctly in the view.html template.
-Solution:
-Ensured the week field was accessed inside the {% for meal_plan in meal_plans %} loop.
-Provided options to display the week for each meal plan or just the first meal plan.
-6. CSS Not Being Applied
-Issue: Your custom CSS was not being applied to the project.
-Solution:
-Verified the STATIC_URL and STATICFILES_DIRS settings in settings.py.
-Ensured the CSS file was correctly linked in base.html using {% static %}.
-Checked the directory structure to confirm the CSS file was in the css folder.
-Suggested clearing the browser cache and using developer tools to debug.
-7. Styling the Project
-Issue: You wanted to apply consistent styling to the project.
-Solution:
-Helped define CSS variables in the :root selector for colors and fonts.
-Styled headings, the navbar, and buttons using the defined variables.
-Ensured the @import rule for Google Fonts was correctly placed at the top of the CSS file.
-8. General Debugging and Best Practices
-Issue: Various errors and inconsistencies in views, templates, and CSS.
-Solution:
-Debugged issues like "media query expected" and missing semicolons in CSS.
-Ensured proper use of Django's template inheritance system with {% block content %}.
-Suggested using get_object_or_404 for secure access to objects in views.
+### 🎯 **Code Creation**
+- **CRUD Functionality:**  
+   - Helped me to set up `CreateMeal`, `UpdateMeal`, and `DeleteMeal` views in Django with appropriate form handling and validation.  
+   - Linked CRUD views to templates with proper use of `{% url %}` and ensured seamless navigation.  
 
+- **Navbar and Links:**  
+   - Created a dynamic navbar to display different links (`Login`, `Register`, `Logout`) based on user authentication status.  
 
-### **1. Navbar Styling**
-- **Issue**: You wanted to style the navbar and its elements.
-- **Solution**:
-  - Styled the `.navbar-brand` with a bold font, uppercase text, and hover effects.
-  - Styled `.nav-link` elements with consistent colors and hover effects using your defined CSS variables.
+- **Static Files Setup:**  
+   - Assisted in configuring and linking CSS, JS, and image files correctly using `{% static %}` in Django templates.  
+
+- **Hero Section and Homepage Layout:**  
+   - Designed a clean and professional hero section with appropriate colors, fonts, and call-to-action buttons.  
+   - Provided layout suggestions to keep the homepage simple and approachable.  
+
+- **Favicon and Logo Integration:**  
+   - Provided guidance on incorporating a favicon and generated multiple logo iterations to reflect your app’s purpose.  
+
+- **Footer Implementation:**  
+   - Created a sticky footer using Bootstrap's flexbox utilities (`d-flex`, `flex-column`, `mt-auto`) to maintain consistent positioning.  
 
 ---
 
-### **2. Centering Buttons**
-- **Issue**: The buttons on your `home.html` page were not centered.
-- **Solution**:
-  - Used Bootstrap's `text-center` class to center the buttons.
-  - Added `mx-2` to create spacing between the buttons for a cleaner look.
+### 🐛 **Debugging**
+- **NoReverseMatch Error Fix:**  
+   - Diagnosed and resolved `NoReverseMatch` errors by checking URL names and ensuring proper view connections.  
+
+- **Static Files Not Loading:**  
+   - Debugged and fixed issues with CSS/JS files not loading by configuring `STATIC_URL` and `STATICFILES_DIRS` correctly.  
+
+- **Image and Asset Issues:**  
+   - Resolved issues related to displaying images and verifying correct paths in templates.  
+
+- **Form Error Messages:**  
+   - Ensured that form error messages were displayed correctly and guided you through debugging `form.errors` and `form.non_field_errors`.  
+
+- **Footer Overlapping Content:**  
+   - Fixed the footer positioning issue by adjusting layout and applying flexbox utilities.  
 
 ---
 
-### **3. Bullet Points in Lists**
-- **Issue**: You wanted to remove bullet points from the `<ul>` list in `home.html`.
-- **Solution**:
-  - Used Bootstrap's `list-unstyled` class to remove bullet points.
-  - Provided a custom CSS solution (`list-style-type: none;`) for flexibility.
+### 🎨 **Code Optimization for UX**
+- **UI/UX Enhancements:**  
+   - Suggested a pastel color palette (soft sage, lavender, and complementary colors) that is accessible and aligns with the app’s family-friendly theme.  
+   - Recommended and applied appropriate fonts (`Poppins` and `Dancing Script`) to ensure readability and aesthetic consistency.  
+
+- **Responsive Design:**  
+   - Ensured that the app is responsive across all screen sizes using Bootstrap's grid system and suggested which utility classes worked best.  
+
+- **Navigation and Page Flow:**  
+   - Recommended easy-to-navigate links for CRUD actions and designed a clean page flow to improve user interaction.  
+
+- **Error Highlighting and Feedback:**  
+   - Implemented error highlighting for form fields using Bootstrap’s `is-invalid` class and ensured success/error messages were displayed clearly.  
+
+- **Meal Plan Layout and Button Styling:**  
+   - Enhanced the layout of the **View Meal Plan** page by displaying meal plans in a card-based format with consistent button styling.  
 
 ---
 
-### **4. Adjusting Spacing Between Elements**
-- **Issue**: The `<h6>` and `<p>` elements in `home.html` had too much space between them.
-- **Solution**:
-  - Reduced spacing by using Bootstrap's `mb-*` and `mt-*` classes (e.g., `mb-1`, `mt-0`).
-  - Provided a custom CSS solution for reusable spacing adjustments.
+### 👩‍💻 **Role in Development Process**
+- **Mentor/Technical Advisor:**  
+   - Provided step-by-step guidance on implementing CRUD functionality and fixing errors, while explaining concepts clearly.  
+   - Ensured that your app followed Django best practices to maintain scalability and maintainability.  
+
+- **UI/UX Consultant:**  
+   - Assisted with refining the app’s color scheme, fonts, and design aesthetics to ensure a clean and approachable interface.  
+   - Provided visual assets (the hero image) to enhance your branding and improve the overall user experience.  
+
+- **Collaborative Debugging Partner:**  
+   - Diagnosed issues quickly and guided you through debugging with detailed explanations and solutions.  
 
 ---
-
-### **5. Improving the `<h1>` Heading**
-- **Issue**: You wanted a better `<h1>` heading for your app.
-- **Solution**:
-  - Suggested several engaging and descriptive `<h1>` headings, such as "Plan Your Meals with Ease" and "Effortless Meal Planning Starts Here."
-  - Incorporated Font Awesome icons into the heading for visual appeal.
-
----
-
-### **6. Styling the Form in `create.html`**
-- **Issue**: The form in `create.html` needed styling to match the rest of the app.
-- **Solution**:
-  - Used Bootstrap classes (`p-4`, `border`, `rounded`, `shadow-sm`, `bg-light`) to style the form.
-  - Styled the "Save" button with `btn btn-primary` for consistency.
-  - Added error messages with `alert alert-danger` for better user feedback.
-  - Provided a custom CSS option for further customization.
-
----
-
-### **7. Customizing Buttons**
-- **Issue**: You wanted consistent button styling across the app.
-- **Solution**:
-  - Styled buttons globally in style.css using the `.btn` class.
-  - Added hover effects to change the background color and maintain consistency with your app's theme.
-
----
-
-### **8. General CSS Improvements**
-- **Issue**: You wanted the app's design to feel cohesive.
-- **Solution**:
-  - Used your defined CSS variables (`--primary-color`, `--secondary-color`, etc.) for consistent colors and fonts.
-  - Styled specific elements like `.form`, `.table`, and `#table-header` to match the app's theme.
-
----
-
-
 
 ## Deployment and how to deploy
 
