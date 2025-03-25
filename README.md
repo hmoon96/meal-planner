@@ -117,20 +117,20 @@ Please find below the database model diagram. I have made some changes to the mo
 ### User Flow Diagram
 Below is my User Flow Diagram. This is a simple structure, which aims to fulfill the purpose of being a simple and intuative app. Although there have been some changes to the flow throughout the development process, the core of this structure has remained the same. Users cannot perform any of the CRUD functions without logging it, as the meal plans need to be linked to a user in the database. 
 
-![User Flow Diagram](docs/images/flowchart.png)
+![User Flow Diagram](docs/images/flowchart.jpg)
 
 ## UX Design 
 ### Wireframes 
 This is how I designed the landing page. I wanted it to have a simple and clean design, which is intuitive for users. I decided to have a hero image, to add a vibrancy to the app from the get go, then include a little bit of information about the purpose of the app below. I also made the nav bar and buttons clear, so the users can easily log in, log out, sign up, create and view plans from the home screen.
-![Landing Page](https://github.com/user-attachments/assets/2bb84854-a69c-48f2-96f3-ccf9d9538e7d) /
+![Landing Page](docs/images/landing_page.png)
 
 The Mobile, Tablet and Laptop views of the viewing screen were designed as a table. The idea behind this was that it would be easier for the user to read which meals were for which day. However, as my design evolved, I decided to change this layout to a Bootstrap card. This is because it was easier to make this responsive across all screen sizes, therefore a better User Experience overall. From this page, users can update and delete their plans, completing the CRUD functionality designed.
 
-![Mobile Planner View](https://github.com/user-attachments/assets/0e309fd0-03ba-40bc-a904-02038f8cf4cf) /
+![Mobile Planner View](docs/images/mobile_planner_view.png) /
 
-![Tablet Planner View copy](https://github.com/user-attachments/assets/67abf89e-4f82-4dfd-a1f6-fc297f0cd863) /
+![Tablet Planner View copy](docs/images/tablet_planner_view.png) /
 
-![Laptop Planner View ](https://github.com/user-attachments/assets/dde788fd-68f6-4e5d-bc16-ba0a41e08cb6) /
+![Laptop Planner View ](docs/images/laptop_planner_view.png) /
 
 ### Fonts
 As the target audience are families and individuals who need help with organising their meals, I wanted to make sure that the fonts chosen were selected carefully to appeal to this audience. 
@@ -270,11 +270,32 @@ Although the Best Practice, Accessibility and SEO scores were consistently 100 t
 
 All files were validated using https://validator.w3.org/ 
 
+Here are the screenshots of the home.html page, to show the warnings:
+
+![image](https://github.com/user-attachments/assets/e1a2fc3b-699d-40f8-ae17-3182037731b1)
+
+![image](https://github.com/user-attachments/assets/27e57f3b-af15-4f4d-9c5d-b9279d77dbc4)
+
+I haven't included the screenshots of the others, as there were no errors or warnings to show. 
+
 ### CSS
-I checked the only CSS file for the project (style.css) and there were no errors. I used https://jigsaw.w3.org/css-validator/validator
+I checked the only CSS file for the project (style.css) and there were no errors. I used https://jigsaw.w3.org/css-validator/
+
+![image](https://github.com/user-attachments/assets/b566cd50-3185-4c38-ac51-102009370b66)
+
 
 ### Python
-All of the PY files were tested twice. Throughout the process with the Flake8 extension in VS Code and at the end, with the Code Institute Linter - https://pep8ci.herokuapp.com/# 
+All of the PY files were tested twice. Throughout the process with the Flake8 extension in VS Code and at the end, with the Code Institute Linter - https://pep8ci.herokuapp.com/#
+I tried to format the py files, so that they were compliant with the formatting guidelines. As such, I saved all of the files with a new line, then added, commited and pushed. However, the new line that I added disappeared again. When I look at the code in my VSCode, the extra line is there, but when I deploy, it disappears.
+
+Here is an example of what happens when I copy the code from my Github into the Linter:
+
+![image](https://github.com/user-attachments/assets/21720603-a444-4aa0-a121-da94f233074e)
+
+
+But this is what it looks like in VS Code:
+![image](https://github.com/user-attachments/assets/cdc1d985-deef-4954-8a6c-a19b72e32d65)
+
 
 ## AI
 I have used CoPilot and Chat GPT on a number of occasions to help me to:
