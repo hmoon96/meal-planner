@@ -2,8 +2,7 @@
 
 PYM aims to provide a straightforward and intuitive solution, as it will allow individuals to plan and keep track of their meals for the week. This will allow individuals to reduce stress, save money and improve health.
 
-
-![Website Mockup](all-devices-black.png)
+![Website Mockup](docs/images/all-devices-black.png)
 
 ## Purpose
 Life is busy. Many families struggle to stay organised and plan their meals effectively, potentially leading to increased stress, a more expensive food bill and a less nutritious diet.
@@ -25,10 +24,15 @@ The MVP will include a meal planner, which will be in the form of a card. There 
 
 ### Key Features
 **Homepage** \
-The User first views the homepage. 
-![image](https://github.com/user-attachments/assets/e065b09f-5cb5-4c11-967f-307036571762)
+The User first views the homepage. They can see the hero image and read the benefits of using our Meal Planner. From this page, the user can click on the buttons to create and view their meal plans directly.\
+![Homepage screenshot](docs/images/screenshots/pym_homepage.png)
 
-**Create your Meal Plan**
+**Create your Meal Plan** \
+When the User clicks the Create button (either on the main page or the link on the Navbar), it takes them to this page. They can fill in the form and then click save at the bottom once complete. If any of the boxes are left blank, the page will redirect the user to the empty box for it to be filled in. The form will not submit if any box is empty.\
+![Create your Meal Plan screenshot](docs/images/screenshots/pym_create.png) \
+
+When all the boxes are filled in and the user clicks submit, they are redirected to the view page and a notification pops up.\
+![Meal Plan created successfully screenshot](docs/images/screenshots/pym_create_notification.png)
 
 **View your Meal Plans**
 
