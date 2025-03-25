@@ -1,31 +1,33 @@
 # PYM - Plan Your Meals
-A resource to help busy families save time and money.
+
+PYM aims to provide a straightforward and intuitive solution, as it will allow individuals to plan and keep track of their meals for the week. This will allow individuals to reduce stress, save money and improve health.
+
 
 ![alt text](all-devices-black.png)
 
-## Our Why
-**Draft**
+## Purpose
 Life is busy. Many families struggle to stay organised and plan their meals effectively, potentially leading to increased stress, a more expensive food bill and a less nutritious diet.
-In addition to the general stresses of day to day life, we are going through a cost of living crisis. The House of Commons reported in 2022/23 that around 11% of households live in food poverty. As such, it is more important than ever to start being more savvy with our money. This is where PYM comes in. Using PYM to help you plan your meals every week can help you can help make your money go further and reduce your food waste. 
+In addition to the general stresses of day to day life, we are going through a cost of living crisis. The House of Commons reported in 2022/23 that around 11% of households live in food poverty. As such, it is more important than ever to start being more savvy with our money. This is where PYM comes in. Using PYM to help you plan your meals every week can help make your money go further and reduce your food waste. 
 
-### Purpose
-**Draft**
-Our purpose is simple - to help our users plan their meals, saving their time and money.
-
-My meal planning app aims to provide a straightforward and intuitive solution, as it will allow individuals to plan and keep track of their meals for the week. This will allow individuals to reduce stress, save money and improve health.
+So, our purpose is simple - to help our users plan their meals, saving their time and money.
 
 ### Target Audience
-**Draft** My primary target audience includes busy professionals, families, and anyone looking for help planning their weekly meals. This can be anyone that would benefot from saving time, money or both.
+Our primary target audience includes busy professionals, families, and anyone looking for help planning their weekly meals. This can be anyone that would benefit from saving time, money or both.
 
-## Minimum Viable Product
-The MVP will include a meal planner, which will be in the form of a table. There will be the days of the week across the top, and Breakfast, Lunch and Dinner down the side. Users will then be able to type the meals they are going to eat into each of these boxes. As users will be able to log in, they will have the opportunity to save, update and delete aspects of their planner, so it is always up to date. 
-
-### Key Features
+### Key Aims
 **Simple and intuitive UX** - This will be straightforward to use from the get go, making meal planning easier, not adding more challenge.\
 **User authentication** - Users will be able to login to their own accounts, meaning their meal plans are safe and saved to look back on. \
 **CRUD functionality** - Users will be able to create, view, edit and delete their meal plans as they wish, making it fully adaptable.\
-**Multiple users per account** - Allowing multiple users to be able to access one account makes this app much more user friendly for families. This creates a centralised space for collaboration, making the meal planning process efficient and adaptable to all families.\ 
 **Responsive design** - This will be responsive across all screen sizes, making it easy to edit your meal plan, no matter the device.\
+
+## Minimum Viable Product
+The MVP will include a meal planner, which will be in the form of a card. There will be the days of the week listed in the card and users will then be able to type the meals they are going to eat into each of these boxes. As users will be able to log in, they will have the opportunity to save, update and delete aspects of their planner, so it is always up to date. The meal plans will be listed from most recent at the top and be listed in reverse order, so the most recent plan will be most easily visible. The other plans will be listed below, so it is easy to scroll down and get inspiration from past meal plans.
+
+### Key Features
+**Homepage**
+The User first views the homepage. 
+![image](https://github.com/user-attachments/assets/e065b09f-5cb5-4c11-967f-307036571762)
+
 
 ## Other Features - Prioritisation
 There are other features that I would like to include to enhance the user experience and make the app even more useful. I will list these in order of priority:
@@ -50,7 +52,17 @@ Paste diagram and explain
 Examples and link to Canban board
 
 ## UX Design 
-### Wireframes and theory behind the design
+### Wireframes 
+This is how I designed the landing page. I wanted it to have a simple and clean design, which is intuitive for users. I decided to have a hero image, to add a vibrancy to the app from the get go, then include a little bit of information about the purpose of the app below. I also made the nav bar and buttons clear, so the users can easily log in, log out, sign up, create and view plans from the home screen.
+![Landing Page](https://github.com/user-attachments/assets/2bb84854-a69c-48f2-96f3-ccf9d9538e7d) /
+
+The Mobile, Tablet and Laptop views of the viewing screen were designed as a table. The idea behind this was that it would be easier for the user to read which meals were for which day. However, as my design evolved, I decided to change this layout to a Bootstrap card. This is because it was easier to make this responsive across all screen sizes, therefore a better User Experience overall. From this page, users can update and delete their plans, completing the CRUD functionality designed.
+![Mobile Planner View](https://github.com/user-attachments/assets/0e309fd0-03ba-40bc-a904-02038f8cf4cf) /
+
+![Tablet Planner View copy](https://github.com/user-attachments/assets/67abf89e-4f82-4dfd-a1f6-fc297f0cd863) /
+
+![Laptop Planner View ](https://github.com/user-attachments/assets/dde788fd-68f6-4e5d-bc16-ba0a41e08cb6) /
+
 ### Fonts
 ### Colours
 
@@ -105,10 +117,11 @@ Delete Meal Plan Page | No, Take Me Home | Click | Takes the user back to the vi
 ## Code Validation
 ### HTML
 | HTML Doc | Passed Validation? (No Errors) | Any warnings? |
+|----------|--------------------------------|---------------|
 | home.html | Yes, no errors | Two |
 | create.html | Yes, no errors | No |
-| view.html (when there are no meal plans to view | Yes, no errors | No |
-| view.html (when there are three meal plans to view | Yes, no errors | No |
+| view.html (when there are no meal plans to view) | Yes, no errors | No |
+| view.html (when there are three meal plans to view) | Yes, no errors | No |
 | update.html | Yes, no errors | No |
 | delete.html | Yes, no errors | No |
 
@@ -116,7 +129,9 @@ All files were validated using https://validator.w3.org/
 
 ### CSS
 I checked the only CSS file for the project (style.css) and there were no errors. I used https://jigsaw.w3.org/css-validator/validator
+
 ### Python
+All of the PY files were tested twice. Throughout the process with the Flake8 extension in VS Code and at the end, with the Code Institute Linter - https://pep8ci.herokuapp.com/# 
 
 ## AI
 I have used CoPilot and Chat GPT on a number of occasions to help me to:
