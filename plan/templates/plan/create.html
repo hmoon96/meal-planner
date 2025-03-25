@@ -5,10 +5,13 @@
 
 {% block content %}
 <div class="container mt-4">
-    <form method="post">
+    <h1 class="text-center mb-4">Create Your Meal Plan</h1>
+    <form method="post" class="form p-4 border rounded shadow-sm bg-white">
         {{ form | crispy }} 
         {% csrf_token %}
-        <button class="btn mb-3" type="submit">Save</button>
+        <div class="text-center mt-4 mb-0">
+            <button class="btn" type="submit">Save</button>
+        </div>
     </form>
 
 {% if errors %}

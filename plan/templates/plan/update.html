@@ -9,7 +9,7 @@
     <form method="post" class="form p-4 border rounded shadow-sm">
         {% csrf_token %}
         {{ form|crispy }}
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 mb-3">
             <button class="btn" type="submit">Save</button>
         </div>
     </form>
