@@ -467,5 +467,13 @@ https://commonslibrary.parliament.uk/research-briefings/cbp-9209/
 - https://ccbv.co.uk/projects/Django/5.0/ - Used for help developing Django code and troubleshooting issues.
 - https://docs.djangoproject.com/ - Used for help developing Django code and troubleshooting issues.
 - https://websitemockupgenerator.com/ - Used to create my Website Mock Up for the README.
+- The Code Institute LMS - I used the 'I think therefore I blog' walkthrough project, as well as other areas, to recap certain skills.
 
 ## Credits
+Thank you to Code Institute, for helping me come on in leaps and bounds in such a short space of time.
+Thanks especially to my three tutors, for your help and guidance throughout:
+- My Facilitator, Alexander
+- My Coding Coach, John
+- My SME tutor, Kevin
+Finally, a huge thank you to my entire bootcamp cohort. Your support, advice and help have been vital to me in this process.
+
