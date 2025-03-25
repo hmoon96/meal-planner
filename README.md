@@ -229,7 +229,7 @@ I generated Lighthouse reports for my app. The results are below:
 
 - Delete
 
-![Lighthouse Score - Delete page](docs/images/screenshots/delete.html_desktop_lighthouse.png)
+![Lighthouse Score - Delete page](https://github.com/user-attachments/assets/93a4402d-6936-4f10-a575-2ffb03cde498)
 
 
 ### Mobile 
@@ -251,7 +251,8 @@ I generated Lighthouse reports for my app. The results are below:
 
 - Delete
 
-![Lighthouse Score - Delete page](docs/images/screenshots/delete.html_mobile_lighthouse.png)
+![Lighthouse Score - Delete page](https://github.com/user-attachments/assets/d2aaa4f7-372f-46cf-b4e1-b9dc952b98c4)
+
 
 ### To note
 Although the Best Practice, Accessibility and SEO scores were consistently 100 throughout testing, the performance score seemed to differ. This depended on whether I was testing the performance on a mobile or a laptop. The laptop score is higher than the mobile, with scores or 98 and 99 across the board. The mobile score has been as low as 85 and as high as 93, depending on the time of testing and the page being tested.
