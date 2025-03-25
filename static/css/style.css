@@ -4,20 +4,20 @@
     --heading-font: "Dancing Script", sans-serif;
     --nav-font: "Poppins SemiBold 600", sans-serif;
     --body-font: "Poppins", sans-serif;
-    --primary-color:  #A3BE8C; /* sage green */
-    --secondary-color: #B48EAD; /* soft lavendar */
+    --primary-color:  #C2D3B6; /* sage green */
+    --secondary-color: #83677A; /* soft lavendar */
     --text-color: #333333; /* charcoal grey */
     --background-color: #f1f5e6; /* light cream */
-    --button-color: #4F7942; /* deep green */
+    --button-color: #3B5E34; /* deep green */
 }
 
 /* General Styling */
-h1, h2, h3 {
+h1 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
 }
 
-h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     font-family: var(--body-font);
     color: var(--secondary-color);
 }
@@ -57,10 +57,6 @@ p {
 #navbar .navbar-brand:hover {
     color: var(--font-color); /* Change color on hover */
     text-decoration: none; /* Remove underline on hover */
-}
-
-.navbar-toggler {
-    background-color: var(--button-color); /* Set the background color */
 }
 
 /*Buttons*/
@@ -115,7 +111,7 @@ p {
 
 .alert {
     font-family: var(--body-font);
-    color: var(--text-color);
+    color: whitesmoke;
     padding: 15px;
 }
 
@@ -128,4 +124,8 @@ p {
     background-color: var(--button-color);
     font-family: var(--body-font);
     color: var(--background-color);
+}
+
+.link {
+    color: var(--button-color);
 }
