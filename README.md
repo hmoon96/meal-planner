@@ -376,6 +376,60 @@ I have used both CoPilot and ChatGPT throughout this project. It has been a grea
 
 ## Deployment and how to deploy
 
+The project is currently deployed on Heroku, you can find it by following the link below:
+- https://hmoon96-meal-planner-9c8cfb97430e.herokuapp.com/
+
+### **Cloning and Setting Up Locally**
+Follow these steps to clone the repository and set it up on your local machine:
+
+1. **Clone the Repository**:
+   - Open your terminal and run:
+     ```bash
+     git clone https://github.com/hmoon96/meal-planner.git
+     cd meal-planner
+     ```
+
+2. **Set Up a Virtual Environment**:
+   - Create and activate a virtual environment:
+     ```bash
+     python -m venv venv
+     source venv/bin/activate  # On Windows: venv\Scripts\activate
+     ```
+
+3. **Install Dependencies**:
+   - Install the required Python packages:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+4. **Set Up Environment Variables**:
+   - Create a `.env` file in the root directory and add the following:
+     ```env
+     SECRET_KEY=your-secret-key
+     DATABASE_URL=sqlite:///db.sqlite3  # Or your database URL
+     DEBUG=True
+     ```
+
+5. **Run Migrations**:
+   - Apply database migrations:
+     ```bash
+     python manage.py migrate
+     ```
+
+6. **Run the Development Server**:
+   - Start the Django development server:
+     ```bash
+     python manage.py runserver
+     ```
+
+7. **Access the App**:
+   - Open your browser and go to:
+     ```
+     http://127.0.0.1:8000/
+     ```
+
+Your app is now running locally!
+
 ## Technologies Used
 ### Backend
 - **Python**: Programming language used for the backend.
@@ -394,7 +448,7 @@ I have used both CoPilot and ChatGPT throughout this project. It has been a grea
 ### Tools
 - **Visual Studio Code (VS Code)**: IDE used for development.
 - **Django Development Server**: For testing the application locally.
-- **Browser Developer Tools**: For debugging frontend issues.
+- **Chrome Developer Tools**: For debugging frontend issues.
 
 ### Additional Libraries
 - **Font Awesome**: For adding icons to the application.
