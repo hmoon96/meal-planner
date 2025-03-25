@@ -28,17 +28,30 @@ The User first views the homepage. They can see the hero image and read the bene
 ![Homepage screenshot](docs/images/screenshots/pym_homepage.png)
 
 **Create your Meal Plan** \
-When the User clicks the Create button (either on the main page or the link on the Navbar), it takes them to this page. They can fill in the form and then click save at the bottom once complete. If any of the boxes are left blank, the page will redirect the user to the empty box for it to be filled in. The form will not submit if any box is empty.\
+When the User clicks the Create a Meal Plan button (either on the main page or the link on the Navbar), it takes them to this page. They can fill in the form and then click save at the bottom once complete. If any of the boxes are left blank, the page will redirect the user to the empty box for it to be filled in. The form will not submit if any box is empty.\
 ![Create your Meal Plan screenshot](docs/images/screenshots/pym_create.png) \
 
 When all the boxes are filled in and the user clicks submit, they are redirected to the view page and a notification pops up.\
 ![Meal Plan created successfully screenshot](docs/images/screenshots/pym_create_notification.png)
 
-**View your Meal Plans**
+**View your Meal Plans**\
+When the User clicks the View Your Meal Plan button (either on the main page or the link on the Navbar), it takes them to this page.\ All of the meal plans are listed in reverse order, with the most recent being first. This is so the users can see this week's plan straight away, but they can scroll to look at older plans easily too, for meal inspiration. This enhances the User Experience.\ From here, users can update and delete individual meal plans with ease, further allowing us to meet our aim of building a simple and intuitive app.
+![View your Meal Plan screenshot](docs/images/screenshots/pym_view.png) \
 
 **Update your Meal Plan**
+When Users click the Update button next to the plan, they are taken to this page. They are then able to alter any box in the form as they see fit, as well as the date. \
+![Update your Meal Plan screenshot](docs/images/screenshots/pym_update.png) \
+
+When the user has updated the plan (all the boxes must still be filled in) and the user clicks submit, they are redirected to the view page and a notification pops up.\
+![Meal Plan updated successfully screenshot](docs/images/screenshots/pym_update_notification.png) \
 
 **Delete your Meal Plan**
+If a User wants to delete a plan, they must click on the delete button. This takes them to this page.\
+![Delete your Meal Plan screenshot](docs/images/screenshots/pym_delete.png) \
+
+If they click on the "No, take me home button", they are taken back to the view page. Nothing will have changed, their plan will still be there and no notification will display. \
+If they click "Yes, Delete". The plan will be deleted from the view, they are redirected to the view page and a notification pops up.\
+![Delete your Meal Plan screenshot](docs/images/screenshots/pym_delete_notification.png) \
 
 ## Other Features - Prioritisation
 There are other features that I would like to include to enhance the user experience and make the app even more useful. I will list these in order of priority:
