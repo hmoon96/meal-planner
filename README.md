@@ -29,29 +29,29 @@ The User first views the homepage. They can see the hero image and read the bene
 
 **Create your Meal Plan** \
 When the User clicks the Create a Meal Plan button (either on the main page or the link on the Navbar), it takes them to this page. They can fill in the form and then click save at the bottom once complete. If any of the boxes are left blank, the page will redirect the user to the empty box for it to be filled in. The form will not submit if any box is empty.\
-![Create your Meal Plan screenshot](docs/images/screenshots/pym_create.png) \
+![Create your Meal Plan screenshot](docs/images/screenshots/pym_create.png) 
 
 When all the boxes are filled in and the user clicks submit, they are redirected to the view page and a notification pops up.\
 ![Meal Plan created successfully screenshot](docs/images/screenshots/pym_create_notification.png)
 
 **View your Meal Plans**\
 When the User clicks the View Your Meal Plan button (either on the main page or the link on the Navbar), it takes them to this page.\ All of the meal plans are listed in reverse order, with the most recent being first. This is so the users can see this week's plan straight away, but they can scroll to look at older plans easily too, for meal inspiration. This enhances the User Experience.\ From here, users can update and delete individual meal plans with ease, further allowing us to meet our aim of building a simple and intuitive app.
-![View your Meal Plan screenshot](docs/images/screenshots/pym_view.png) \
+![View your Meal Plan screenshot](docs/images/screenshots/pym_view.png) 
 
 **Update your Meal Plan**
 When Users click the Update button next to the plan, they are taken to this page. They are then able to alter any box in the form as they see fit, as well as the date. \
-![Update your Meal Plan screenshot](docs/images/screenshots/pym_update.png) \
+![Update your Meal Plan screenshot](docs/images/screenshots/pym_update.png) 
 
 When the user has updated the plan (all the boxes must still be filled in) and the user clicks submit, they are redirected to the view page and a notification pops up.\
-![Meal Plan updated successfully screenshot](docs/images/screenshots/pym_update_notification.png) \
+![Meal Plan updated successfully screenshot](docs/images/screenshots/pym_update_notification.png) 
 
 **Delete your Meal Plan**
 If a User wants to delete a plan, they must click on the delete button. This takes them to this page.\
-![Delete your Meal Plan screenshot](docs/images/screenshots/pym_delete.png) \
+![Delete your Meal Plan screenshot](docs/images/screenshots/pym_delete.png) 
 
 If they click on the "No, take me home button", they are taken back to the view page. Nothing will have changed, their plan will still be there and no notification will display. \
 If they click "Yes, Delete". The plan will be deleted from the view, they are redirected to the view page and a notification pops up.\
-![Delete your Meal Plan screenshot](docs/images/screenshots/pym_delete_notification.png) \
+![Delete your Meal Plan screenshot](docs/images/screenshots/pym_delete_notification.png) 
 
 ## Other Features - Prioritisation
 There are other features that I would like to include to enhance the user experience and make the app even more useful. I will list these in order of priority:
@@ -88,7 +88,19 @@ The Mobile, Tablet and Laptop views of the viewing screen were designed as a tab
 ![Laptop Planner View ](https://github.com/user-attachments/assets/dde788fd-68f6-4e5d-bc16-ba0a41e08cb6) /
 
 ### Fonts
+As the target audience are families and individuals who need help with organising their meals, I wanted to make sure that the fonts chosen were selected carefully to appeal to this audience. 
+
+The font for the H1 elements is Dancing Script. This is a handwritten, cursive font which is friendly and elegant, whilst being easy to read.
+
+The font for the body of the site was Poppins. This is a modern sans-serif font, making it very easy to read. It still adds to the friendly, supportive feel of the site. 
+
 ### Colours
+The colours were also chosen to evoke calmness for the User, and convey friendliness. \
+- The background is a very light shade of green, to add a freshness to the site but maintain the readability, without using white.
+- The navbar is a different, darker shade of light, sage green. This keeps a calm, fresh and friendly feel.
+- The buttons continued with the green theme, this time with a dark forest type of green. This maintains the colour scheme but adding matching accents.
+- The text colour is a dark grey, so that the readability was optimum without using a harsh black.
+- The secondary colour chosen was a darker lavendar purple. This is a gentle colour which pairs well with the sage green and adds a classy, calming touch to the app.
 
 ## Responsiveness
 Include Screenshots
