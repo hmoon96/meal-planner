@@ -1,6 +1,9 @@
 from django import forms
 from .models import MealPlan
 
+# Create a form for the MealPlan model
+# This form will be used to create a new meal plan
+
 
 class MealPlanForm(forms.ModelForm):
     class Meta:

@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" >
 </head>
 <body class="d-flex flex-column min-vh-100">
+    <!--Navbar-->
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="{% url 'home' %}">PYM</a>
@@ -61,6 +62,7 @@
       </nav>
 
     <main class="flex-shrink-0 main-bg">
+        <!--User Notifications when CRUD is implemented-->
         {% if messages %}
         <div class="text-center">
             {% for message in messages %}
@@ -70,6 +72,7 @@
             </div>
             {% endfor %}
         </div>
+        <!--Logged in or out notifications-->
         {% endif %}
         {% if user.is_authenticated %}
         <div class="text-end">
@@ -83,6 +86,7 @@
         {% endblock content %}
     </main>
 
+    <!--Footer-->
     <footer class="footer mt-auto bg-body-tertiary" id="footer">
         <div class="container text-center">
             <span class="text-center text-muted"><strong>Plan Your Meals &copy; 2025</strong></span>

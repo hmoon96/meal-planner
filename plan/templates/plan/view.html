@@ -3,13 +3,16 @@
 {% load static %}
 {% block content %}
 <div class="container mt-4">
+    <!--Heading-->
     <h1 class="text-center mb-4">Meal Plans</h1>
     {% for meal_plan in meal_plans %}
     <div class="card mb-4 bg-white">
         <div class="card-header">
+            <!--Week-->
             <h2 class="h6 mb-0">Week of {{ meal_plan.week }}</h2>
         </div>
         <div class="card-body">
+            <!--Meals by day written here-->
             <ul class="list-group">
                 <li class="list-group-item plan"><strong>Monday:</strong> {{ meal_plan.monday_food }}</li>
                 <li class="list-group-item plan"><strong>Tuesday:</strong> {{ meal_plan.tuesday_food }}</li>

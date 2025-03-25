@@ -3,6 +3,7 @@
 {% block content %}
 <div class="text-center">
     <h1>Are you sure you want to delete this Meal Plan?</h1>
+    <!--Form-->
     <form method="POST">
         {% csrf_token %}
         <button type="submit" class="btn mt-3">Yes, Delete</button>
